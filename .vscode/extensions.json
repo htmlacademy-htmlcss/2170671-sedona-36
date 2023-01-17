@@ -1,5 +1,11 @@
 {
-  "recommendations": [
-    "EditorConfig.EditorConfig"
-  ]
+	"recommendations": [
+		"anteprimorac.html-end-tag-labels",
+		"atishay-jain.all-autocomplete",
+		"celianriboulet.webvalidator",
+		"editorconfig.editorconfig",
+		"mhutchie.git-graph",
+		"stylelint.vscode-stylelint",
+		"vitaliymaz.vscode-svg-previewer"
+	]
 }

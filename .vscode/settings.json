@@ -1,23 +1,37 @@
 {
-  "editor.renderWhitespace": "selection",
-  "files.exclude": {
-      "*:Zone.Identifier": true,
-      "node_modules/": true
-  },
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.guides.bracketPairs": "active",
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "css.format.spaceAroundSelectorSeparator": true,
-  "css.lint.compatibleVendorPrefixes": "warning",
-  "css.lint.duplicateProperties": "warning",
-  "css.lint.idSelector": "error",
-  "css.lint.important": "error",
-  "css.lint.importStatement": "warning",
-  "css.lint.universalSelector": "warning",
-  "css.lint.unknownVendorSpecificProperties": "warning",
-  "css.lint.zeroUnits": "error",
-  "html.format.endWithNewline": true,
-  "html.format.indentInnerHtml": true
+	"files.exclude": {
+		"*:Zone.Identifier": true,
+		"node_modules/": true
+	},
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"editor.detectIndentation": false,
+	"editor.guides.bracketPairs": true,
+	"editor.insertSpaces": false,
+	"editor.linkedEditing": true,
+	"editor.renderWhitespace": "selection",
+	"editor.wordWrap": "on",
+
+	"files.autoSave": "onFocusChange",
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+
+	"html.format.indentInnerHtml": true,
+	"html.format.indentHandlebars": true,
+	"html.format.maxPreserveNewLines": 1,
+	"html.format.wrapLineLength": 0,
+
+	"stylelint.validate": [
+		"css",
+		"less",
+		"postcss",
+		"sass",
+		"scss"
+	],
+
+	"svg.preview.boundingBox": true,
+	"svg.preview.transparencyGrid": true
 }
