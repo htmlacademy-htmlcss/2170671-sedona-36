@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Никита Зубалей](https://up.htmlacademy.ru/htmlcss/36/user/2170671).
-* Наставник: `Неизвестно`.
+* Наставник: `Сергей Артёмов`(https://htmlacademy.ru/profile/firefoxic)
 
 ---
 
