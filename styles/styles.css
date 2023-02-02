@@ -1,5 +1,15 @@
-img {
-	max-width: 100%;
-	height: auto;
-	object-fit: contain;
+@font-face {
+	font-family: "PT Sans";
+	src: url(../fonts/ptsans-400.woff2) format("woff2");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	src: url(../fonts/ptsans-700.woff2) format("woff2");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
 }
