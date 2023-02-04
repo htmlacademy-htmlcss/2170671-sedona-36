@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "PT Sans";
-	src: url(../fonts/ptsans-400.woff2) format("woff2");
+	src: url("../fonts/ptsans-400.woff2") format("woff2");
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
@@ -8,8 +8,44 @@
 
 @font-face {
 	font-family: "PT Sans";
-	src: url(../fonts/ptsans-700.woff2) format("woff2");
+	src: url("../fonts/ptsans-700.woff2") format("woff2");
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
+}
+
+body {
+	font-family: "PT Sans", sans-serif;
+	font-size: 22px;
+	line-height: 26px;
+	background-color: #ffffff;
+	color: #333333;
+}
+
+.page-header {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.navigation-link {
+	color: inherit;
+	background-color: inherit;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation-button {
+	color: #ffffff;
+	background-color: #756157;
+	align-items: center;
+	border: none;
+	border-radius: 4px;
+	padding: 8px 34px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
 }
