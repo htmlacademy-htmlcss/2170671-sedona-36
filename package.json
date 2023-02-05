@@ -42,5 +42,8 @@
 		"node": ">=16"
 	},
 	"type": "module",
-	"precommit": "lint"
+	"precommit": "lint",
+	"volta": {
+		"node": "18.14.0"
+	}
 }
