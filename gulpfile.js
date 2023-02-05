@@ -12,8 +12,13 @@ import browser from "browser-sync";
 const server = browser.create();
 const { src, dest, watch, series, parallel } = gulp;
 
+const Path = {
+	STYLES: ["./styles/**/*.css", "!./styles/**/*.min.css"],
+	ICONS: ["./icons/**/*.svg", "!./icons/stack.svg"]
+}
+
 export function processStyles() {
-	return src(["./styles/**/*.css", "!./styles/**/*.min.css"])
+	return src(Path.STYLES)
 		.pipe(plumber())
 		.pipe(postcss([autoprefixer(), csso()]))
 		.pipe(
@@ -26,7 +31,7 @@ export function processStyles() {
 }
 
 export function createStack() {
-	return src(["./icons/**/*.svg", "!./icons/stack.svg"])
+	return src(Path.ICONS)
 		.pipe(svgo())
 		.pipe(stacksvg())
 		.pipe(dest("./icons"));
@@ -55,11 +60,8 @@ function reloadServer() {
 }
 
 function watchFiles() {
-	watch(["./styles/**/*.css", "!./styles/**/*.min.css"], processStyles);
-	watch(
-		["./icons/**/*.svg", "!./icons/stack.svg"],
-		series(createStack, reloadServer)
-	);
+	watch(Path.STYLES, processStyles);
+	watch(Path.ICONS, series(createStack, reloadServer));
 	watch("./**/*.{html,js,jpg,png,svg,ico,webmanifest}", reloadServer);
 }
 
