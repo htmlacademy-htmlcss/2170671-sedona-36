@@ -132,7 +132,7 @@
 								</ul>
 						</fieldset>
 						<fieldset class="filter-price">
-							<legend class="filter-price-legend">
+							<legend class="filter-group-title">
 								Стоимость, ₽:
 							</legend>
 							<p class="filter-price-description">
@@ -152,12 +152,12 @@
 						</fieldset>
 						<menu class="menu-filter-list">
 							<li class="menu-filter-item">
-								<button class="filter-btn" type="submit">
+								<button class="filter-button" type="submit">
 									Применить
 								</button>
 							</li>
 							<li class="menu-filter-item">
-								<button class="filter-btn" type="reset">
+								<button class="filter-button filter-button-color" type="reset">
 									Сбросить
 								</button>
 							</li>
@@ -171,7 +171,7 @@
 				</h2>
 				<p class="catalog-description">
 					Найдено гостиниц:
-					<output>
+					<output class="catalog-description">
 						38
 					</output>
 				</p>
@@ -273,7 +273,7 @@
 						</button>
 						<div class="catalog-item-stars">
 							<span class="visually-hidden">
-								Четырёхзвёздочный
+								Трехзвездочный
 							</span>
 						</div>
 						<p class="catalog-item-raiting-description">
@@ -299,7 +299,7 @@
 						</button>
 						<div class="catalog-item-stars">
 							<span class="visually-hidden">
-								Четырёхзвёздочный
+								Двухзвуздочный
 							</span>
 						</div>
 						<p class="catalog-item-raiting-description">
@@ -309,7 +309,7 @@
 				</ul>
 				<ol class="catalog-pagination-list">
 					<li class="catalog-pagination-item">
-						<a class="catalog-pagination-link" aria-current="page" href="#">
+						<a class="catalog-pagination-link catalog-pagination-link-active" aria-current="page" href="#">
 							1
 						</a>
 					</li>
@@ -348,8 +348,8 @@
 					<p class="subscribe-description">
 						Только полезная информация и никакого спама, честное бойскаутское!
 					</p>
-					<input type="email" name="subscribe-email" id="subscribe" placeholder="Ваш e-mail" required>
-					<button  type="button">
+					<input class="subscribe-input" type="email" name="subscribe-email" id="subscribe" placeholder="Ваш e-mail" required>
+					<button class="subscribe-email-button"  type="button">
 						Подписаться
 					</button>
 				</form>
