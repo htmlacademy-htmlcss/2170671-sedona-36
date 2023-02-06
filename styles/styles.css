@@ -14,12 +14,58 @@
 	font-display: swap;
 }
 
+html {
+	background-color: #f2f2f2;
+}
+
 body {
 	font-family: "PT Sans", sans-serif;
 	font-size: 22px;
 	line-height: 26px;
-	background-color: #ffffff;
 	color: #333333;
+	max-width: 1200px;
+	box-shadow: 0 0 15px rgb(0 0 0 / 0.2);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	box-sizing: border-box;
+}
+
+.button {
+	color: #ffffff;
+	background-color: #82b3d3;
+	font-family: inherit;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 20px;
+	border: none;
+	border-radius: 4px;
+}
+
+.button--secondary {
+	background-color: #756157;
+}
+
+.button--tertiary {
+	background-color: #7db54f;
+}
+
+.main-title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .page-header {
@@ -37,34 +83,14 @@ body {
 	text-align: center;
 }
 
-.navigation-button {
-	color: #ffffff;
-	background-color: #756157;
-	align-items: center;
-	border: none;
-	border-radius: 4px;
-	padding: 8px 34px;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 20px;
-}
-
 .hero {
+	background-color: #524ea3;
 	background-image: url("../images/index-background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-
 .advantages-title {
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 36px;
-	text-transform: uppercase;
-	margin: auto;
-	text-align: center;
-	display: block;
 	width: 620px;
 }
 
@@ -123,13 +149,6 @@ body {
 }
 
 .service-title {
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 36px;
-	text-transform: uppercase;
-	margin: auto;
-	text-align: center;
-	display: block;
 	width: 505px;
 }
 
@@ -159,47 +178,20 @@ body {
 	background-color: rgb(131 179 211 / 0.12);
 }
 
-.search {
-	align-items: center;
-}
-
-.search-title {
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 36px;
-	text-transform: uppercase;
-	text-align: center;
-}
-
 .search-description {
 	text-align: center;
 }
 
-.search-link {
-	font-weight: 700;
+.search-link,
+.subscribe-email-button {
 	font-size: 20px;
 	line-height: 36px;
-	text-transform: uppercase;
-	color: #ffffff;
-	background-color: #756157;
-	padding: 8px 50px;
-	border: none;
-	border-radius: 4px;
-	text-decoration: none;
 }
 
 .subscribe {
+	background-color: #524ea3;
 	background-image: url("../images/Subscribe.jpg");
 	background-size: cover;
-}
-
-.subscribe-title {
-	color: #ffffff;
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 36px;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 .subscribe-description {
@@ -210,19 +202,6 @@ body {
 .subscribe-input {
 	width: 452px;
 	height: 52px;
-}
-
-.subscribe-email-button {
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 20px;
-	line-height: 36px;
-	color: #ffffff;
-	text-align: center;
-	padding: 8px 50px;
-	background-color: #82b3d3;
-	border: none;
-	border-radius: 0 4px 4px 0;
 }
 
 .footer-contacts-phone {
@@ -236,6 +215,7 @@ body {
 }
 
 .filter-container {
+	background-color: #524ea3;
 	background-image: url("../images/filter.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -277,17 +257,6 @@ body {
 }
 
 .filter-button {
-	color: #ffffff;
-	font-size: 16px;
-	line-height: 20px;
-	padding: 8px 50px;
-	border: none;
-	border-radius: 4px;
-	background-color: #82b3d3;
-	text-transform: uppercase;
-}
-
-.filter-button-color {
 	background-color: rgb(0 0 0 / 0);
 }
 
@@ -324,32 +293,6 @@ body {
 	line-height: 21px;
 }
 
-.catalog-item-link {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 20px;
-	color: #ffffff;
-	text-transform: uppercase;
-	padding: 8px 26px;
-	border: none;
-	border-radius: 4px;
-	background-color: #756157;
-	text-decoration: none;
-	text-align: center;
-}
-
-.catalog-item-button {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 20px;
-	color: #ffffff;
-	text-transform: uppercase;
-	padding: 8px 20px;
-	border: none;
-	border-radius: 4px;
-	background-color: #82b3d3;
-}
-
 .catalog-item-raiting-description {
 	font-size: 16px;
 	line-height: 20px;
@@ -363,22 +306,4 @@ body {
 
 .catalog-pagination-item {
 	display: inline;
-}
-
-.catalog-pagination-link {
-	font-weight: 700;
-	font-style: 20px;
-	line-height: 36px;
-	color: #ffffff;
-	background-color: #82b3d3;
-	text-decoration: none;
-	text-transform: uppercase;
-	padding: 11px 26px 13px 23px;
-	margin-right: 8px;
-	border-radius: 4px;
-}
-
-.catalog-pagination-link-active {
-	color: #000000;
-	background-color: #f2f2f2;
 }
