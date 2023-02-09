@@ -16,6 +16,7 @@
 
 html {
 	background-color: #f2f2f2;
+	height: 100%;
 }
 
 body {
@@ -23,8 +24,12 @@ body {
 	font-size: 22px;
 	line-height: 26px;
 	color: #333333;
-	max-width: 1200px;
 	box-shadow: 0 0 15px rgb(0 0 0 / 0.2);
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	max-width: 1200px;
 }
 
 *,
@@ -37,6 +42,11 @@ img {
 	max-width: 100%;
 	height: auto;
 	box-sizing: border-box;
+}
+
+.main-index {
+	width: 1200px;
+	margin: 0 auto;
 }
 
 .button {
@@ -71,6 +81,23 @@ img {
 .page-header {
 	background-color: #ffffff;
 	color: #000000;
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.header-container {
+	width: 1060px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.header-logo {
+	margin-right: 28px;
+}
+
+.navigation {
+	display: flex;
 }
 
 .navigation-link {
@@ -197,6 +224,10 @@ img {
 .subscribe-description {
 	color: #ffffff;
 	text-align: center;
+}
+
+.subscribe-title {
+	color: #ffffff;
 }
 
 .subscribe-input {

@@ -8,52 +8,54 @@
 	</head>
 	<body>
 		<header class="page-header">
-			<nav class="navigation">
-				<a class="header-logo" href="index.html">
-					<img class="header-logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип города Sedona">
-				</a>
-				<ul class="navigation-list">
+			<div class="header-container">
+				<nav class="navigation">
+					<a class="header-logo" href="index.html">
+						<img class="header-logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип города Sedona">
+					</a>
+					<ul class="navigation-list">
+						<li class="navigation-item">
+							<a class="navigation-link" href="index.html">
+								Главная
+							</a>
+						</li>
+						<li class="navigation-item">
+							<a class="navigation-link" href="#">
+								О седоне
+							</a>
+						</li>
+						<li class="navigation-item">
+							<a class="navigation-link">
+								Гостиницы
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<menu class="navigation-list navigation-user">
 					<li class="navigation-item">
-						<a class="navigation-link" href="index.html">
-							Главная
+						<a class="navigation-link" href="#">
+							<span class="visually-hidden">
+								Поиск
+							</span>
 						</a>
 					</li>
 					<li class="navigation-item">
 						<a class="navigation-link" href="#">
-							О седоне
+							<span class="visually-hidden">
+								Нравится
+							</span>
+							<span class="visually-hidden">
+								12
+							</span>
 						</a>
 					</li>
 					<li class="navigation-item">
-						<a class="navigation-link">
-							Гостиницы
-						</a>
+						<button class=" button button--secondary navigation-button" type="button">
+							Хочу сюда!
+						</button>
 					</li>
-				</ul>
-			</nav>
-			<menu class="navigation-list navigation-user">
-				<li class="navigation-item">
-					<a class="navigation-link" href="#">
-						<span class="visually-hidden">
-							Поиск
-						</span>
-					</a>
-				</li>
-				<li class="navigation-item">
-					<a class="navigation-link" href="#">
-						<span class="visually-hidden">
-							Нравится
-						</span>
-						<span class="visually-hidden">
-							12
-						</span>
-					</a>
-				</li>
-				<li class="navigation-item">
-					<button class="button button--secondary navigation-button" type="button">
-						Хочу сюда!
-					</button>
-				</li>
-			</menu>
+				</menu>
+			</div>
 		</header>
 		<main class="main-inner">
 			<div class="filter-container">
