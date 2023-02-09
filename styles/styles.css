@@ -233,14 +233,21 @@ img {
 	background-color: rgb(131 179 211 / 0.12);
 }
 
-.search-description {
-	text-align: center;
+.search-title {
+	margin: 0 auto;
 }
 
-.search-link,
-.subscribe-email-button {
-	font-size: 20px;
-	line-height: 36px;
+.search-description {
+	text-align: center;
+	margin: 0 auto;
+	width: 592px;
+}
+
+.search-link {
+	display: block;
+	width: 376px;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .subscribe {
@@ -249,13 +256,21 @@ img {
 	background-size: cover;
 }
 
+.subscribe-title {
+	color: #ffffff;
+	margin: 0 auto;
+}
+
 .subscribe-description {
 	color: #ffffff;
 	text-align: center;
+	width: 475px;
+	margin: 0 auto;
 }
 
-.subscribe-title {
-	color: #ffffff;
+.input-container {
+	width: 684px;
+	margin: 0 auto;
 }
 
 .subscribe-input {
