@@ -51,6 +51,7 @@ img {
 .main-index {
 	width: 1200px;
 	margin: 0 auto;
+	flex-grow: 1;
 }
 
 .button {
@@ -276,6 +277,17 @@ img {
 .subscribe-input {
 	width: 452px;
 	height: 52px;
+}
+
+.page-footer {
+	width: 1200px;
+}
+
+.footer-container {
+	width: 1060px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
 }
 
 .footer-contacts-phone {
