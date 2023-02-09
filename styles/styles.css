@@ -44,6 +44,10 @@ img {
 	box-sizing: border-box;
 }
 
+.visually-hidden {
+	display: none;
+}
+
 .main-index {
 	width: 1200px;
 	margin: 0 auto;
@@ -117,21 +121,35 @@ img {
 	background-size: cover;
 }
 
+.hero-img-logo {
+	display: block;
+	margin: 0 auto;
+}
+
 .advantages-title {
+	display: block;
 	width: 620px;
+	margin: 0 auto;
 }
 
 .advantages-description {
 	text-align: center;
+	margin: 0 auto;
 }
 
 .advantages-list {
 	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
 }
 
 .advantages-item-town,
 .advantages-item-bridge {
 	background-color: #82b3d3;
+	display: flex;
 }
 
 .advantages-item-town h3,
@@ -153,6 +171,7 @@ img {
 .advantages-item-square,
 .advantages-item-tourists {
 	background-color: rgb(131 179 211 / 0.12);
+	width: 400px;
 }
 
 .advantages-item-square h3,
@@ -173,18 +192,27 @@ img {
 
 .advantages-item-road {
 	background-color: rgb(131 179 211 / 0.2);
+	width: 400px;
 }
 
 .service-title {
+	display: block;
+	margin: 0 auto;
 	width: 505px;
 }
 
 .service-description {
 	text-align: center;
+	width: 490px;
+	margin: 0 auto;
 }
 
 .service-company-list {
 	text-align: center;
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
 .service-company-title {
