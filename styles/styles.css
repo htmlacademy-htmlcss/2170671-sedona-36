@@ -305,6 +305,12 @@ img {
 	background-image: url("../images/filter.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	padding: 0 70px;
+}
+
+.header-inner-list {
+	display: flex;
+	list-style-type: none;
 }
 
 .header-inner-title {
@@ -314,15 +320,27 @@ img {
 	line-height: 78px;
 }
 
-.header-inner-list {
-	list-style-type: none;
-}
-
 .header-inner-link {
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 21px;
 	color: #ffffff;
+}
+
+.filter-form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.filter-group {
+	width: 150px;
+	margin-right: 70px;
+}
+
+.filter-price {
+	width: 288px;
+	margin-left: 70px;
+	margin-right: 70px;
 }
 
 .filter-group-title {
@@ -332,7 +350,8 @@ img {
 	color: #ffffff;
 }
 
-.filter-list {
+.filter-list,
+.menu-filter-list {
 	list-style-type: none;
 }
 
@@ -344,6 +363,12 @@ img {
 
 .filter-button {
 	background-color: rgb(0 0 0 / 0);
+}
+
+.catalog-container {
+	padding: 0 70px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .catalog-description {
@@ -363,7 +388,17 @@ img {
 }
 
 .catalog-list {
+	display: flex;
+	flex-wrap: wrap;
 	list-style-type: none;
+}
+
+.catalog-item {
+	width: 340px;
+}
+
+.catalog-item:not(:nth-child(3n)) {
+	margin-right: 20px;
 }
 
 .catalog-item-title {
@@ -388,8 +423,5 @@ img {
 
 .catalog-pagination-list {
 	list-style-type: none;
-}
-
-.catalog-pagination-item {
-	display: inline;
+	display: flex;
 }

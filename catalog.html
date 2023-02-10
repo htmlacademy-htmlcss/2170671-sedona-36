@@ -171,38 +171,40 @@
 				<h2 class="visually-hidden">
 					Каталог гостиниц
 				</h2>
-				<p class="catalog-description">
-					Найдено гостиниц:
-					<output class="catalog-description">
-						38
-					</output>
-				</p>
-				<select class="catalog-select" aria-label="Сортировка">
-					<option value="cheap">
-						Сначала дешевые
-					</option>
-					<option value="exspensive">
-						Сначала дорогие
-					</option>
-					<option value="popular">
-						Сначала популярные
-					</option>
-				</select>
-				<a class="catalog-btn" href="#">
-					<span class="visually-hidden">
-						Показать карточки
-					</span>
-				</a>
-				<a class="catalog-btn" href="#">
-					<span class="visually-hidden">
-						Открыть компьютерную версию
-					</span>
-				</a>
-				<a class="catalog-btn" href="#">
-					<span class="visually-hidden">
-						Показать список
-					</span>
-				</a>
+				<div class="catalog-container">
+					<p class="catalog-description">
+						Найдено гостиниц:
+						<output class="catalog-description">
+							38
+						</output>
+					</p>
+					<select class="catalog-select" aria-label="Сортировка">
+						<option value="cheap">
+							Сначала дешевые
+						</option>
+						<option value="exspensive">
+							Сначала дорогие
+						</option>
+						<option value="popular">
+							Сначала популярные
+						</option>
+					</select>
+					<a class="catalog-btn" href="#">
+						<span class="visually-hidden">
+							Показать карточки
+						</span>
+					</a>
+					<a class="catalog-btn" href="#">
+						<span class="visually-hidden">
+							Открыть компьютерную версию
+						</span>
+					</a>
+					<a class="catalog-btn" href="#">
+						<span class="visually-hidden">
+							Показать список
+						</span>
+					</a>
+				</div>
 				<ul class="catalog-list">
 					<li class="catalog-item">
 						<h3 class="catalog-item-title">
@@ -350,10 +352,12 @@
 					<p class="subscribe-description">
 						Только полезная информация и никакого спама, честное бойскаутское!
 					</p>
-					<input class="subscribe-input" type="email" name="subscribe-email" id="subscribe" placeholder="Ваш e-mail" required>
-					<button class=" button subscribe-email-button"  type="button">
-						Подписаться
-					</button>
+					<div class="input-container">
+						<input class="subscribe-input" type="email" name="subscribe-email" id="subscribe" placeholder="Ваш e-mail" required>
+						<button class=" button subscribe-email-button"  type="button">
+							Подписаться
+						</button>
+					</div>
 				</form>
 			</section>
 		</main>
