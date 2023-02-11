@@ -45,12 +45,19 @@ img {
 }
 
 .visually-hidden {
-	display: none;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .main-index {
-	width: 1200px;
-	margin: 0 auto;
 	flex-grow: 1;
 }
 
@@ -71,7 +78,7 @@ img {
 	background-color: #756157;
 }
 
-.button--tertiary {
+.button--success {
 	background-color: #7db54f;
 }
 
@@ -86,15 +93,8 @@ img {
 .page-header {
 	background-color: #ffffff;
 	color: #000000;
-	margin: 0 auto;
-	width: 1200px;
-}
-
-.header-container {
-	width: 1060px;
+	padding: 0 70px;
 	display: flex;
-	justify-content: space-between;
-	margin: 0 auto;
 }
 
 .header-logo {
@@ -103,6 +103,10 @@ img {
 
 .navigation {
 	display: flex;
+}
+
+.navigation-user {
+	margin-left: auto;
 }
 
 .navigation-link {
@@ -145,6 +149,10 @@ img {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
+}
+
+.advantages-item-bridge img {
+	order: -1;
 }
 
 .advantages-item-town,
@@ -234,6 +242,10 @@ img {
 	background-color: rgb(131 179 211 / 0.12);
 }
 
+.search {
+	text-align: center;
+}
+
 .search-title {
 	margin: 0 auto;
 }
@@ -245,10 +257,13 @@ img {
 }
 
 .search-link {
-	display: block;
-	width: 376px;
+	display: inline-block;
+	min-width: 376px;
 	text-align: center;
 	margin: 0 auto;
+	font-size: 20px;
+	line-height: 36px;
+	font-family: inherit;
 }
 
 .subscribe {
@@ -275,19 +290,25 @@ img {
 }
 
 .subscribe-input {
-	width: 452px;
-	height: 52px;
+	min-width: 452px;
+	min-height: 52px;
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: rgb(0 0 0 / 60%);
+}
+
+.subscribe-email-button {
+	font-size: 20px;
+	line-height: 36px;
 }
 
 .page-footer {
 	width: 1200px;
-}
-
-.footer-container {
-	width: 1060px;
+	padding: 0 70px;
 	display: flex;
 	justify-content: space-between;
-	margin: 0 auto;
 }
 
 .footer-contacts-phone {
@@ -318,6 +339,7 @@ img {
 	color: #ffffff;
 	font-size: 60px;
 	line-height: 78px;
+	margin: 0;
 }
 
 .header-inner-link {
