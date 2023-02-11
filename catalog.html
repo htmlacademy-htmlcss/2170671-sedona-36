@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<title>Каталог | Sedona | HTML Academy </title>
 		<link rel="stylesheet" href="./styles/styles.min.css">
-		<link rel="stylesheet" href="styles/styles.css">
 	</head>
 	<body>
 		<header class="page-header">
@@ -49,7 +48,7 @@
 					</a>
 				</li>
 				<li class="navigation-item">
-					<button class="button button--secondary navigation-button" type="button">
+					<button class=" button button--secondary navigation-button" type="button">
 						Хочу сюда!
 					</button>
 				</li>
@@ -169,38 +168,40 @@
 				<h2 class="visually-hidden">
 					Каталог гостиниц
 				</h2>
-				<p class="catalog-description">
-					Найдено гостиниц:
-					<output class="catalog-description">
-						38
-					</output>
-				</p>
-				<select class="catalog-select" aria-label="Сортировка">
-					<option value="cheap">
-						Сначала дешевые
-					</option>
-					<option value="exspensive">
-						Сначала дорогие
-					</option>
-					<option value="popular">
-						Сначала популярные
-					</option>
-				</select>
-				<a class="catalog-btn" href="#">
-					<span class="visually-hidden">
-						Показать карточки
-					</span>
-				</a>
-				<a class="catalog-btn" href="#">
-					<span class="visually-hidden">
-						Открыть компьютерную версию
-					</span>
-				</a>
-				<a class="catalog-btn" href="#">
-					<span class="visually-hidden">
-						Показать список
-					</span>
-				</a>
+				<div class="catalog-container">
+					<p class="catalog-description">
+						Найдено гостиниц:
+						<output class="catalog-description">
+							38
+						</output>
+					</p>
+					<select class="catalog-select" aria-label="Сортировка">
+						<option value="cheap">
+							Сначала дешевые
+						</option>
+						<option value="exspensive">
+							Сначала дорогие
+						</option>
+						<option value="popular">
+							Сначала популярные
+						</option>
+					</select>
+					<a class="catalog-btn" href="#">
+						<span class="visually-hidden">
+							Показать карточки
+						</span>
+					</a>
+					<a class="catalog-btn" href="#">
+						<span class="visually-hidden">
+							Открыть компьютерную версию
+						</span>
+					</a>
+					<a class="catalog-btn" href="#">
+						<span class="visually-hidden">
+							Показать список
+						</span>
+					</a>
+				</div>
 				<ul class="catalog-list">
 					<li class="catalog-item">
 						<h3 class="catalog-item-title">
@@ -242,7 +243,7 @@
 						<a class="button button--secondary catalog-item-link" href="#">
 							подробнее
 						</a>
-						<button class="button button--tertiary catalog-item-button" type="button">
+						<button class="button button--success catalog-item-button" type="button">
 							в избранном
 						</button>
 						<div class="catalog-item-stars">
@@ -348,10 +349,12 @@
 					<p class="subscribe-description">
 						Только полезная информация и никакого спама, честное бойскаутское!
 					</p>
-					<input class="subscribe-input" type="email" name="subscribe-email" id="subscribe" placeholder="Ваш e-mail" required>
-					<button class=" button subscribe-email-button"  type="button">
-						Подписаться
-					</button>
+					<div class="input-container">
+						<input class="subscribe-input" type="email" name="subscribe-email" id="subscribe" placeholder="Ваш e-mail" required>
+						<button class="button subscribe-email-button"  type="submit">
+							Подписаться
+						</button>
+					</div>
 				</form>
 			</section>
 		</main>
