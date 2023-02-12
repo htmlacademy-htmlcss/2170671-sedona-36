@@ -105,8 +105,24 @@ img {
 	display: flex;
 }
 
+.navigation-list {
+	margin: 0;
+	padding: 0;
+	width: 470px;
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
 .navigation-user {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	width: 268px;
 	margin-left: auto;
+	list-style-type: none;
 }
 
 .navigation-link {
@@ -117,6 +133,24 @@ img {
 	line-height: 24px;
 	text-decoration: none;
 	text-align: center;
+	padding: 20px 16px;
+	display: block;
+}
+
+.navigation-user-link {
+	display: block;
+	min-height: 64px;
+	min-width: 44px;
+}
+
+.navigation-user-item:last-child {
+	margin-left: 20px;
+}
+
+.navigation-button {
+	margin-left: auto;
+	display: block;
+	padding: 8px 34px;
 }
 
 .hero {
@@ -127,6 +161,8 @@ img {
 }
 
 .hero-img-logo {
+	padding-top: 51px;
+	padding-bottom: 82px;
 	display: block;
 	margin: 0 auto;
 }
