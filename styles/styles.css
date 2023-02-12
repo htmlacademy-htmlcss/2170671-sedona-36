@@ -167,15 +167,26 @@ img {
 	margin: 0 auto;
 }
 
+.advantages {
+	background-color: #ffffff;
+}
+
+.advantages-container {
+	margin-bottom: 21px;
+}
+
 .advantages-title {
+	padding-top: 69px;
 	display: block;
 	width: 620px;
 	margin: 0 auto;
+	margin-bottom: 25px;
 }
 
 .advantages-description {
 	text-align: center;
 	margin: 0 auto;
+	padding-bottom: 69px;
 }
 
 .advantages-list {
@@ -185,6 +196,12 @@ img {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
+}
+
+.advantages-item-container {
+	display: flex;
+	flex-direction: column;
+	padding: 102px 82px;
 }
 
 .advantages-item-bridge img {
@@ -204,6 +221,8 @@ img {
 	line-height: 28px;
 	color: #ffffff;
 	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 62px;
 }
 
 .advantages-item-town p,
@@ -226,6 +245,8 @@ img {
 	font-size: 24px;
 	line-height: 28px;
 	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 62px;
 }
 
 .advantages-item-square p,
@@ -244,12 +265,15 @@ img {
 	display: block;
 	margin: 0 auto;
 	width: 505px;
+	padding-top: 64px;
+	margin-bottom: 20px;
 }
 
 .service-description {
 	text-align: center;
 	width: 490px;
 	margin: 0 auto;
+	padding-bottom: 64px;
 }
 
 .service-company-list {
@@ -260,17 +284,31 @@ img {
 	margin: 0;
 }
 
+.service-company-item {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+
+.service-company-container {
+	padding: 81px 85px;
+}
+
 .service-company-title {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
 	text-transform: uppercase;
+	padding-top: 102px;
+	margin-bottom: 30px;
 }
 
 .service-company-description {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
+	margin: 0;
+	padding: 0;
 }
 
 .service-company-item-hous,
@@ -280,16 +318,22 @@ img {
 
 .search {
 	text-align: center;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
 }
 
 .search-title {
 	margin: 0 auto;
+	padding-top: 96px;
+	margin-bottom: 20px;
 }
 
 .search-description {
 	text-align: center;
 	margin: 0 auto;
 	width: 592px;
+	margin-bottom: 54px;
 }
 
 .search-link {
@@ -300,6 +344,8 @@ img {
 	font-size: 20px;
 	line-height: 36px;
 	font-family: inherit;
+	padding: 8px 50px;
+	margin-bottom: 96px;
 }
 
 .subscribe {
@@ -309,8 +355,10 @@ img {
 }
 
 .subscribe-title {
+	padding-top: 96px;
 	color: #ffffff;
 	margin: 0 auto;
+	margin-bottom: 20px;
 }
 
 .subscribe-description {
@@ -318,11 +366,13 @@ img {
 	text-align: center;
 	width: 475px;
 	margin: 0 auto;
+	margin-bottom: 54px;
 }
 
 .input-container {
-	width: 684px;
+	width: 690px;
 	margin: 0 auto;
+	padding-bottom: 104px;
 }
 
 .subscribe-input {
@@ -333,11 +383,13 @@ img {
 	font-size: 18px;
 	line-height: 24px;
 	color: rgb(0 0 0 / 60%);
+	margin-right: 0;
 }
 
 .subscribe-email-button {
 	font-size: 20px;
 	line-height: 36px;
+	padding: 8px 50px;
 }
 
 .page-footer {
