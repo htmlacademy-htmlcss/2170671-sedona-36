@@ -393,10 +393,25 @@ img {
 }
 
 .page-footer {
+	display: flex;
 	width: 1200px;
 	padding: 0 70px;
+}
+
+.footer-list {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-right: 41px;
+	width: 142px;
+}
+
+.footer-link {
+	display: block;
+	min-height: 40px;
+	min-width: 47px;
 }
 
 .footer-contacts-phone {
@@ -407,6 +422,13 @@ img {
 	font-size: 40px;
 	line-height: 40px;
 	text-align: center;
+	padding: 5px 195px;
+	width: 720px;
+}
+
+.footer-logo {
+	margin-left: 41px;
+	display: block;
 }
 
 .filter-container {
