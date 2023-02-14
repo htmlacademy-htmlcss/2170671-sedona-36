@@ -29,26 +29,26 @@
 					</li>
 				</ul>
 			</nav>
-			<menu class="navigation-list navigation-user">
-				<li class="navigation-item">
-					<a class="navigation-link" href="#">
+			<menu class="navigation-user">
+				<li class="navigation-item navigation-user-item">
+					<a class="navigation-link navigation-user-link" href="#">
 						<span class="visually-hidden">
 							Поиск
 						</span>
 					</a>
 				</li>
-				<li class="navigation-item">
-					<a class="navigation-link" href="#">
+				<li class="navigation-item navigation-user-item">
+					<a class="navigation-link navigation-user-link" href="#">
 						<span class="visually-hidden">
 							Нравится
 						</span>
-						<span class="visually-hidden">
+						<span class="visually-hidden favorite-number">
 							12
 						</span>
 					</a>
 				</li>
-				<li class="navigation-item">
-					<button class=" button button--secondary navigation-button" type="button">
+				<li class="navigation-item navigation-user-item">
+					<button class="button button--secondary navigation-button" type="button">
 						Хочу сюда!
 					</button>
 				</li>
@@ -62,15 +62,17 @@
 				<img class="hero-img-logo" src="images/welcome.svg" width="458" height="352" alt="Потому что Гранд-Каньон отстой!">
 			</section>
 			<section class="advantages">
-				<h2 class="visually-hidden">
-					Преимущества Седоны
-				</h2>
-				<strong class="main-title advantages-title">Седона — небольшой городок в Аризоне,
-					заслуживающий большего!
-				</strong>
-				<p class="advantages-description">
-					Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-				</p>
+				<div class="advantages-container">
+					<h2 class="visually-hidden">
+						Преимущества Седоны
+					</h2>
+					<strong class="main-title advantages-title">Седона — небольшой городок в Аризоне,
+						заслуживающий большего!
+					</strong>
+					<p class="advantages-description">
+						Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+					</p>
+				</div>
 				<ul class="advantages-list">
 					<li class="advantages-item advantages-item-town">
 						<div class="advantages-item-container">
@@ -96,7 +98,7 @@
 					<li class="advantages-item advantages-item-road">
 						<div class="advantages-item-container">
 							<h3 class="advantages-item-title">
-								Красивая дорога
+								Красивая<br>дорога
 							</h3>
 							<p class="advantages-item-description">
 								Ехать в Седону из Лас-Вегаса совсем не скучно!
@@ -106,7 +108,7 @@
 					<li class="advantages-item advantages-item-tourists">
 						<div class="advantages-item-container">
 							<h3 class="advantages-item-title">
-								Мало туристов
+								Мало<br>туристов
 							</h3>
 							<p class="advantages-item-description">
 								Большинство едет в Гранд Каньон и толпится там
@@ -116,7 +118,7 @@
 					<li class="advantages-item advantages-item-bridge">
 						<div class="advantages-item-container">
 							<h3 class="advantages-item-title">
-								Там есть мост дьявола
+								Там есть<br>мост дьявола
 							</h3>
 							<p class="advantages-item-description">
 								Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -136,28 +138,34 @@
 				</p>
 				<ul class="service-company-list">
 					<li class="service-company-item service-company-item-hous">
-						<h3 class="service-company-title">
-							Жильё
-						</h3>
-						<p class="service-company-description">
-							Рекомендуем пожить в настоящем мотеле, всё как в кино!
-						</p>
+						<div class="service-company-container">
+							<h3 class="service-company-title">
+								Жильё
+							</h3>
+							<p class="service-company-description">
+								Рекомендуем пожить в настоящем мотеле, всё как в кино!
+							</p>
+						</div>
 					</li>
 					<li class="service-company-item">
-						<h3 class="service-company-title">
-							Еда
-						</h3>
-						<p class="service-company-description">
-							Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-						</p>
+						<div class="service-company-container">
+							<h3 class="service-company-title">
+								Еда
+							</h3>
+							<p class="service-company-description">
+								Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+							</p>
+						</div>
 					</li>
 					<li class="service-company-item service-company-item-souvenirs">
-						<h3 class="service-company-title">
-							Сувениры
-						</h3>
-						<p class="service-company-description">
-							Не только китайского, но и настоящего местного производства!
-						</p>
+						<div class="service-company-container">
+							<h3 class="service-company-title">
+								Сувениры
+							</h3>
+							<p class="service-company-description">
+								Не только китайского, но и настоящего местного производства!
+							</p>
+						</div>
 					</li>
 				</ul>
 			</section>
@@ -166,7 +174,7 @@
 					Заинтересовались?
 				</h2>
 				<p class="search-description">
-					Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+					Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
 				</p>
 				<a class="button button--secondary search-link" href="catalog.html">
 					Поиск гостиницы в Седоне
@@ -220,7 +228,7 @@
 					+7 (812) 812-12-12
 				</a>
 			</address>
-			<small>
+			<small class="footer-logo">
 				<a class="footer-link-logo" href="https://htmlacademy.ru/profile/id2170671" target="_blank">
 					<img class="footer-academy-logo" src="images/footer-logo.svg" width="115" height="33" alt="Разработано в рамках HTML Academy">
 				</a>
