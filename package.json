@@ -4,7 +4,6 @@
 	"description": "Личный проект «Sedona» от HTML Academy",
 	"devDependencies": {
 		"@htmlacademy/editorconfig-cli": "^1.0.0",
-		"autoprefixer": "^10.4.13",
 		"browser-sync": "^2.27.11",
 		"gulp": "^4.0.2",
 		"gulp-plumber": "^1.2.1",
@@ -14,7 +13,10 @@
 		"gulp-svgmin": "^4.1.0",
 		"gulp-w3c-html-validator": "^5.2.0",
 		"postcss": "^8.4.21",
+		"postcss-calc": "^8.2.4",
 		"postcss-csso": "^6.0.1",
+		"postcss-import": "^15.1.0",
+		"postcss-preset-env": "^8.0.1",
 		"pre-commit": "^1.2.2",
 		"stylelint": "^14.16.1",
 		"stylelint-config-firefoxic": "1.0.0"
