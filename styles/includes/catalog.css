@@ -1,5 +1,5 @@
 .catalog {
-	padding: 50px 70px 60px 70px;
+	padding: 50px 70px 40px 70px;
 }
 
 .catalog-header {
@@ -43,6 +43,7 @@
 .catalog-list {
 	margin: 40px 0 40px;
 	padding: 0;
+	padding-bottom: 40px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
@@ -72,6 +73,10 @@
 	grid-column: 1 / -1;
 	width: 100%;
 	height: auto;
+}
+
+.catalog-item-price {
+	justify-self: end;
 }
 
 .catalog-item-description,

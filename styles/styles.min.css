@@ -169,25 +169,20 @@ img {
 	margin: 0 auto;
 }
 
-.advantages {
-	background-color: #ffffff;
-}
-
 .advantages-container {
-	margin-bottom: 21px;
+	max-width: 720px;
+	padding: 69px 20px 90px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .advantages-title {
-	padding-top: 69px;
 	display: block;
-	width: 620px;
-	margin: 0 auto 25px;
+	margin-bottom: 25px;
 }
 
 .advantages-description {
-	text-align: center;
-	margin: 0 auto;
-	padding-bottom: 69px;
+	margin: 0;
 }
 
 .advantages-list {
@@ -200,9 +195,24 @@ img {
 }
 
 .advantages-item-container {
-	display: flex;
-	flex-direction: column;
-	padding: 102px 82px;
+	display: grid;
+	width: 400px;
+	align-items: center;
+	justify-items: center;
+	place-items: center;
+	align-content: center;
+	justify-content: center;
+	place-content: center;
+	min-height: 385px;
+	padding: 20px;
+}
+
+.advantages-item-title {
+	max-width: 175px;
+}
+
+.advantages-item-description {
+	max-width: 230px;
 }
 
 .advantages-item-bridge img {
@@ -342,6 +352,11 @@ img {
 }
 
 .subscribe {
+	color: #000000;
+}
+
+.subscribe--bg {
+	color: #ffffff;
 	background-color: #524ea3;
 	background-image: url(../images/Subscribe.jpg);
 	background-size: cover;
@@ -349,12 +364,10 @@ img {
 
 .subscribe-title {
 	padding-top: 96px;
-	color: #ffffff;
 	margin: 0 auto 20px;
 }
 
 .subscribe-description {
-	color: #ffffff;
 	text-align: center;
 	width: 475px;
 	margin: 0 auto 54px;
@@ -496,7 +509,7 @@ img {
 }
 
 .catalog {
-	padding: 50px 70px 60px;
+	padding: 50px 70px 40px;
 }
 
 .catalog-header {
@@ -539,7 +552,7 @@ img {
 
 .catalog-list {
 	margin: 40px 0;
-	padding: 0;
+	padding: 0 0 40px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 20px;
@@ -571,6 +584,10 @@ img {
 	grid-column: 1/-1;
 	width: 100%;
 	height: auto;
+}
+
+.catalog-item-price {
+	justify-self: end;
 }
 
 .catalog-item-description,

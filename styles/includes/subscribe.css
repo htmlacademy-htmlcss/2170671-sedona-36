@@ -1,4 +1,9 @@
 .subscribe {
+	color: #000000;
+}
+
+.subscribe--bg {
+	color: #ffffff;
 	background-color: #524ea3;
 	background-image: url("../images/Subscribe.jpg");
 	background-size: cover;
@@ -6,13 +11,11 @@
 
 .subscribe-title {
 	padding-top: 96px;
-	color: #ffffff;
 	margin: 0 auto;
 	margin-bottom: 20px;
 }
 
 .subscribe-description {
-	color: #ffffff;
 	text-align: center;
 	width: 475px;
 	margin: 0 auto;
