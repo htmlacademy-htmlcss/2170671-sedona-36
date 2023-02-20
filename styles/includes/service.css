@@ -1,0 +1,54 @@
+.service-title {
+	display: block;
+	margin: 0 auto;
+	width: 505px;
+	padding-top: 64px;
+	margin-bottom: 20px;
+}
+
+.service-description {
+	text-align: center;
+	width: 490px;
+	margin: 0 auto;
+	padding-bottom: 64px;
+}
+
+.service-company-list {
+	text-align: center;
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.service-company-item {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+
+.service-company-container {
+	padding: 81px 85px;
+}
+
+.service-company-title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	padding-top: 102px;
+	margin-bottom: 30px;
+}
+
+.service-company-description {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	margin: 0;
+	padding: 0;
+}
+
+.service-company-item-hous,
+.service-company-item-souvenirs {
+	background-color: rgb(131 179 211 / 0.12);
+}
