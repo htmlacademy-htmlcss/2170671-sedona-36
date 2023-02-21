@@ -9,6 +9,8 @@
 	line-height: 20px;
 	border: none;
 	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
 }
 
 .button--secondary {
