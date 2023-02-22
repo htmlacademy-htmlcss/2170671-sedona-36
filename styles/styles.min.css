@@ -166,8 +166,7 @@ img {
 	position: relative;
 }
 
-.navigation-user-like::before {
-	content: "12";
+.favorite-number {
 	font-weight: 400;
 	font-size: 10px;
 	line-height: 10px;
@@ -193,10 +192,17 @@ img {
 }
 
 .hero {
-	background-color: #524ea3;
 	background-image: url(../images/index-background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.hero::after {
+	content: "";
+	display: block;
+	background-image: url(../../images/icons/zigzag.svg);
+	width: 1200px;
+	height: 57px;
 }
 
 .hero-img-logo {
@@ -231,6 +237,10 @@ img {
 	list-style-type: none;
 }
 
+.advantages-item {
+	position: relative;
+}
+
 .advantages-item-container {
 	display: grid;
 	width: 400px;
@@ -244,12 +254,31 @@ img {
 	padding: 20px;
 }
 
+.advantages-item-container::before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 2px;
+	background: rgb(255 255 255 / 0.3);
+	top: 190px;
+}
+
+.advantages-item-container-line::before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 2px;
+	background: rgb(0 0 0 / 0.3);
+	top: 190px;
+}
+
 .advantages-item-title {
 	max-width: 175px;
 }
 
 .advantages-item-description {
 	max-width: 230px;
+	margin: 0;
 }
 
 .advantages-item-bridge img {
@@ -335,6 +364,34 @@ img {
 
 .service-company-container {
 	padding: 81px 85px;
+	position: relative;
+}
+
+.service-company-container-food::before,
+.service-company-container-house::before {
+	content: "";
+	position: absolute;
+	background-image: url(../../images/icons/advantage-icon-1.svg);
+	width: 75px;
+	height: 72px;
+	top: 81px;
+	right: 162px;
+}
+
+.service-company-container-food::before {
+	background-image: url(../../images/icons/advantage-icon-2.svg);
+	width: 74px;
+	height: 70px;
+}
+
+.service-company-container-souvenirs::before {
+	content: "";
+	position: absolute;
+	background-image: url(../../images/icons/advantage-icon-3.svg);
+	width: 70px;
+	height: 76px;
+	top: 81px;
+	right: 168px;
 }
 
 .service-company-title {
@@ -453,9 +510,20 @@ img {
 }
 
 .footer-link {
+	position: relative;
 	display: block;
 	min-height: 40px;
 	min-width: 47px;
+}
+
+.footer-link-icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	display: block;
 }
 
 .footer-contacts-phone {
@@ -471,6 +539,20 @@ img {
 }
 
 .footer-logo {
+	width: 142px;
+}
+
+.footer-link-logo {
+	position: relative;
+}
+
+.footer-logo-icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
 	display: block;
 }
 

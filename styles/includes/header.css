@@ -71,8 +71,7 @@
 	position: relative;
 }
 
-.navigation-user-like::before {
-	content: "12";
+.favorite-number {
 	font-weight: 400;
 	font-size: 10px;
 	line-height: 10px;

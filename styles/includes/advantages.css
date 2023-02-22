@@ -26,6 +26,10 @@
 	list-style-type: none;
 }
 
+.advantages-item {
+	position: relative;
+}
+
 .advantages-item-container {
 	display: grid;
 	width: 400px;
@@ -35,12 +39,31 @@
 	padding: 20px;
 }
 
+.advantages-item-container::before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 2px;
+	background: rgb(255 255 255 / 0.3);
+	top: 190px;
+}
+
+.advantages-item-container-line::before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 2px;
+	background: rgb(0 0 0 / 0.3);
+	top: 190px;
+}
+
 .advantages-item-title {
 	max-width: 175px;
 }
 
 .advantages-item-description {
 	max-width: 230px;
+	margin: 0;
 }
 
 .advantages-item-bridge img {

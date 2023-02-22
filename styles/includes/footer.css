@@ -17,9 +17,20 @@
 }
 
 .footer-link {
+	position: relative;
 	display: block;
 	min-height: 40px;
 	min-width: 47px;
+}
+
+.footer-link-icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	display: block;
 }
 
 .footer-contacts-phone {
@@ -34,5 +45,19 @@
 }
 
 .footer-logo {
+	width: 142px;
+}
+
+.footer-link-logo {
+	position: relative;
+}
+
+.footer-logo-icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
 	display: block;
 }

@@ -1,8 +1,15 @@
 .hero {
-	background-color: #524ea3;
 	background-image: url("../images/index-background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.hero::after {
+	content: "";
+	display: block;
+	background-image: url("../../images/icons/zigzag.svg");
+	width: 1200px;
+	height: 57px;
 }
 
 .hero-img-logo {
