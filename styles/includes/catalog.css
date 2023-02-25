@@ -41,6 +41,22 @@
 	border: 2px solid #e5e5e5;
 }
 
+.catalog-button:hover {
+	border: 2px solid #000000;
+	border-radius: 4px;
+}
+
+.catalog-button:focus {
+	border: 2px solid #68a2ca;
+	border-radius: 4px;
+	outline: none;
+}
+
+.catalog-button:active {
+	border: 2px solid #000000;
+	border-radius: 4px;
+}
+
 .catalog-button-cards {
 	background-image: url("../../images/icons/view-icon-1.svg");
 	background-repeat: no-repeat;

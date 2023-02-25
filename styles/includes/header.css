@@ -52,6 +52,19 @@
 	display: block;
 }
 
+.navigation-link:hover {
+	background-color: rgba(131 179 211 / 0.12);
+}
+
+.navigation-link:focus {
+	background-color: rgba(131 179 211 / 0.12);
+	border: 1px solid #000000;
+}
+
+.navigation-link:active {
+	background-color: rgb(131 179 211 / 0.2);
+}
+
 .navigation-item-success {
 	position: relative;
 }

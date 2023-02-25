@@ -23,6 +23,19 @@
 	min-width: 47px;
 }
 
+.footer-link:hover .footer-link-icon {
+	fill: #68a2ca;
+}
+
+.footer-link:focus .footer-link-icon {
+	fill: #68a2ca;
+}
+
+.footer-link:active .footer-link-icon {
+	fill: #68a2ca;
+	opacity: 0.3;
+}
+
 .footer-link-icon {
 	position: absolute;
 	top: 0;
@@ -44,6 +57,18 @@
 	display: block;
 }
 
+.footer-contacts-phone:hover {
+	color: #756157;
+}
+
+.footer-contacts-phone:focus {
+	color: #756157;
+}
+
+.footer-contacts-phone:active {
+	color: rgb(117 97 87 / 0.3);
+}
+
 .footer-logo {
 	width: 142px;
 }
@@ -60,4 +85,17 @@
 	left: 0;
 	margin: auto;
 	display: block;
+}
+
+.footer-link-logo:hover .footer-logo-icon {
+	fill: #756157;
+}
+
+.footer-link-logo:focus .footer-logo-icon {
+	fill: #756157;
+}
+
+.footer-link-logo:active .footer-logo-icon {
+	fill: #756157;
+	opacity: 0.3;
 }
