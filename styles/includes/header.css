@@ -52,6 +52,21 @@
 	display: block;
 }
 
+.navigation-item-success {
+	position: relative;
+}
+
+.navigation-link-success::after {
+	content: "";
+	position: absolute;
+	top: 98%;
+	left: 16px;
+	right: 16px;
+	bottom: 0;
+	height: 0;
+	border: 2px solid #756257;
+}
+
 .navigation-user-link {
 	display: block;
 	min-height: 64px;

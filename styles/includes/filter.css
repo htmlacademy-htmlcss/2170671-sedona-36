@@ -3,16 +3,36 @@
 	background-image: url("../images/filter.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 0 70px;
+	padding: 35px 70px 70px 70px;
 }
 
 .header-inner-list {
 	display: flex;
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.header-inner-list::before {
+	content: "";
+	width: 7px;
+	height: 20px;
+	position: absolute;
+	background-image: url("../../images/icons/arrow-icon.svg");
+	background-repeat: no-repeat;
+	left: 23px;
 }
 
 .header-inner-item {
+	display: flex;
 	margin-right: 29px;
+	align-items: center;
+}
+
+.header-inner-item-house {
+	position: relative;
 }
 
 .header-inner-title {
@@ -21,6 +41,7 @@
 	font-size: 60px;
 	line-height: 78px;
 	margin: 0;
+	margin-bottom: 8px;
 }
 
 .header-inner-link {
@@ -28,6 +49,14 @@
 	font-size: 16px;
 	line-height: 21px;
 	color: #ffffff;
+}
+
+.header-inner-link-house {
+	min-width: 12px;
+	min-height: 12px;
+	background-image: url("../../images/icons/home-icon.svg");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .filter-form {
