@@ -9,7 +9,7 @@
 		"gulp-plumber": "^1.2.1",
 		"gulp-postcss": "^9.0.1",
 		"gulp-rename": "^2.0.0",
-		"gulp-stacksvg": "^2.0.0",
+		"gulp-svg-sprite": "^2.0.1",
 		"gulp-svgmin": "^4.1.0",
 		"gulp-w3c-html-validator": "^5.2.0",
 		"postcss": "^8.4.21",
@@ -40,9 +40,6 @@
 		"styles/**/*.css",
 		"scritps/**/*.js"
 	],
-	"engines": {
-		"node": ">=16"
-	},
 	"type": "module",
 	"precommit": "lint",
 	"volta": {
