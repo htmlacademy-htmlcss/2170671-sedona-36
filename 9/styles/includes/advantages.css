@@ -1,0 +1,124 @@
+.advantages {
+}
+
+.advantages-container {
+	max-width: 720px;
+	padding: 69px 20px calc(69px + 21px);
+	margin: 0 auto;
+	text-align: center;
+}
+
+.advantages-title {
+	display: block;
+	margin-bottom: 25px;
+}
+
+.advantages-description {
+	margin: 0;
+}
+
+.advantages-list {
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.advantages-item {
+	position: relative;
+}
+
+.advantages-item-container {
+	display: grid;
+	width: 400px;
+	place-items: center;
+	place-content: center;
+	min-height: 385px;
+	padding: 20px;
+}
+
+.advantages-item-container::before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 2px;
+	background: rgb(255 255 255 / 0.3);
+	top: 190px;
+}
+
+.advantages-item-container-line::before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 2px;
+	background: rgb(0 0 0 / 0.3);
+	top: 190px;
+}
+
+.advantages-item-title {
+	max-width: 175px;
+}
+
+.advantages-item-description {
+	max-width: 230px;
+	margin: 0;
+}
+
+.advantages-item-bridge img {
+	order: -1;
+}
+
+.advantages-item-town,
+.advantages-item-bridge {
+	background-color: #82b3d3;
+	display: flex;
+}
+
+.advantages-item-town h3,
+.advantages-item-bridge h3 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 62px;
+}
+
+.advantages-item-town p,
+.advantages-item-bridge p {
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+.advantages-item-square,
+.advantages-item-tourists {
+	background-color: rgb(131 179 211 / 0.12);
+	width: 400px;
+}
+
+.advantages-item-square h3,
+.advantages-item-road h3,
+.advantages-item-tourists h3 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 62px;
+}
+
+.advantages-item-square p,
+.advantages-item-road p,
+.advantages-item-tourists p {
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.advantages-item-road {
+	background-color: rgb(131 179 211 / 0.2);
+	width: 400px;
+}

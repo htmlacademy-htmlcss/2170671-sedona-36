@@ -1,0 +1,37 @@
+{
+	"files.exclude": {
+		"*:Zone.Identifier": true,
+		"node_modules/": true
+	},
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"editor.detectIndentation": false,
+	"editor.guides.bracketPairs": true,
+	"editor.insertSpaces": false,
+	"editor.linkedEditing": true,
+	"editor.renderWhitespace": "selection",
+	"editor.wordWrap": "on",
+
+	"files.autoSave": "onFocusChange",
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+
+	"html.format.indentInnerHtml": true,
+	"html.format.indentHandlebars": true,
+	"html.format.maxPreserveNewLines": 1,
+	"html.format.wrapLineLength": 0,
+
+	"stylelint.validate": [
+		"css",
+		"less",
+		"postcss",
+		"sass",
+		"scss"
+	],
+
+	"svg.preview.boundingBox": true,
+	"svg.preview.transparencyGrid": true
+}
