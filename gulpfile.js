@@ -16,7 +16,7 @@ const { src, dest, watch, series, parallel } = gulp;
 
 const Path = {
 	STYLES: ["./styles/**/*.css", "!./styles/**/*.min.css"],
-	ICONS: ["./icons/**/*.svg", "!./icons/stack.svg"],
+	ICONS: "./icons/**/*.svg",
 };
 
 export function processStyles() {
@@ -42,7 +42,7 @@ export function processStyles() {
 }
 
 export function createStack() {
-	return src(Path.ICONS).pipe(svgo()).pipe(stacksvg()).pipe(dest("./icons"));
+	return src(Path.ICONS).pipe(svgo()).pipe(stacksvg()).pipe(dest("./images/"));
 }
 
 export function validateMarkup() {
