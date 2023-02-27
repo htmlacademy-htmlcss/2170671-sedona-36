@@ -56,33 +56,15 @@
 	color: rgb(117 97 87 / 0.3);
 }
 
-.footer-logo {
-	width: 142px;
-}
-
 .footer-link-logo {
-	position: relative;
+	color: #000000;
 }
 
-.footer-logo-icon {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	margin: auto;
-	display: block;
+.footer-link-logo:hover,
+.footer-link-logo:focus-visible {
+	color: #756157;
 }
 
-.footer-link-logo:hover .footer-logo-icon {
-	fill: #756157;
-}
-
-.footer-link-logo:focus .footer-logo-icon {
-	fill: #756157;
-}
-
-.footer-link-logo:active .footer-logo-icon {
-	fill: #756157;
-	opacity: 0.3;
+.footer-link-logo:active {
+	color: rgb(117 97 87 / 0.3);
 }

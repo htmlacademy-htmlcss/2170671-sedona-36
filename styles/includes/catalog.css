@@ -135,25 +135,9 @@
 	background-color: #f2f2f2;
 }
 
-.catalog-item-stars-4 {
-	background-image: url("../../images/icons/star-icon.svg");
-	width: 70px;
-	background-position: left;
-	background-repeat: repeat-x;
-}
-
-.catalog-item-stars-3 {
-	background-image: url("../../images/icons/star-icon.svg");
-	width: 54px;
-	background-position: left;
-	background-repeat: repeat-x;
-}
-
-.catalog-item-stars-2 {
-	background-image: url("../../images/icons/star-icon.svg");
-	width: 35px;
-	background-position: left;
-	background-repeat: repeat-x;
+.catalog-item-stars {
+	display: flex;
+	align-items: center;
 }
 
 .catalog-pagination-list {

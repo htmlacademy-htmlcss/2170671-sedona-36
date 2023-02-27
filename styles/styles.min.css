@@ -8,7 +8,7 @@
 
 @font-face {
 	font-family: "PT Sans";
-	src: url("../fonts/ptsans-700.woff2") format("woff2");
+	src: url(../fonts/ptsans-700.woff2) format("woff2");
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
@@ -622,35 +622,17 @@ img {
 	color: rgb(117 97 87 / 0.3);
 }
 
-.footer-logo {
-	width: 142px;
-}
-
 .footer-link-logo {
-	position: relative;
+	color: #000000;
 }
 
-.footer-logo-icon {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	margin: auto;
-	display: block;
+.footer-link-logo:focus-visible,
+.footer-link-logo:hover {
+	color: #756157;
 }
 
-.footer-link-logo:hover .footer-logo-icon {
-	fill: #756157;
-}
-
-.footer-link-logo:focus .footer-logo-icon {
-	fill: #756157;
-}
-
-.footer-link-logo:active .footer-logo-icon {
-	fill: #756157;
-	opacity: 0.3;
+.footer-link-logo:active {
+	color: rgb(117 97 87 / 0.3);
 }
 
 .filter-container {
@@ -888,22 +870,9 @@ img {
 	background-color: #f2f2f2;
 }
 
-.catalog-item-stars-2,
-.catalog-item-stars-3,
-.catalog-item-stars-4 {
-	background-image: url(../../images/icons/star-icon.svg);
-	width: 70px;
-	background-position: left;
-	background-repeat: repeat-x;
-}
-
-.catalog-item-stars-2,
-.catalog-item-stars-3 {
-	width: 54px;
-}
-
-.catalog-item-stars-2 {
-	width: 35px;
+.catalog-item-stars {
+	display: flex;
+	align-items: center;
 }
 
 .catalog-pagination-list {
