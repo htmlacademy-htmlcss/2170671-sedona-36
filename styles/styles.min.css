@@ -8,7 +8,7 @@
 
 @font-face {
 	font-family: "PT Sans";
-	src: url(../fonts/ptsans-700.woff2) format("woff2");
+	src: url("../fonts/ptsans-700.woff2") format("woff2");
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
@@ -522,7 +522,7 @@ img {
 .subscribe--bg {
 	color: #ffffff;
 	background-color: #524ea3;
-	background-image: url(../images/Subscribe.jpg);
+	background-image: url(../images/subscribe.jpg);
 	background-size: cover;
 }
 
@@ -571,42 +571,31 @@ img {
 }
 
 .footer-list {
-	display: flex;
-	flex-wrap: wrap;
-	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(3, 47px);
+	grid-auto-rows: 40px;
+	list-style: none;
 	margin: 0;
 	padding: 0;
 	width: 142px;
 }
 
 .footer-link {
-	position: relative;
-	display: block;
-	min-height: 40px;
-	min-width: 47px;
+	display: grid;
+	height: 100%;
+	align-items: center;
+	justify-items: center;
+	place-items: center;
+	color: #83b3d3;
 }
 
-.footer-link:hover .footer-link-icon {
-	fill: #68a2ca;
+.footer-link:focus-visible,
+.footer-link:hover {
+	color: #68a2ca;
 }
 
-.footer-link:focus .footer-link-icon {
-	fill: #68a2ca;
-}
-
-.footer-link:active .footer-link-icon {
-	fill: #68a2ca;
-	opacity: 0.3;
-}
-
-.footer-link-icon {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	margin: auto;
-	display: block;
+.footer-link:active {
+	color: rgb(104 162 202 / 0.3);
 }
 
 .footer-contacts-phone {
