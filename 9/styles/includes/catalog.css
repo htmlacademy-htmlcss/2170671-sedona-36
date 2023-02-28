@@ -135,41 +135,23 @@
 	background-color: #f2f2f2;
 }
 
-.catalog-item-stars-4 {
-	background-image: url("../../images/icons/star-icon.svg");
-	width: 70px;
-	background-position: left;
-	background-repeat: repeat-x;
-}
-
-.catalog-item-stars-3 {
-	background-image: url("../../images/icons/star-icon.svg");
-	width: 54px;
-	background-position: left;
-	background-repeat: repeat-x;
-}
-
-.catalog-item-stars-2 {
-	background-image: url("../../images/icons/star-icon.svg");
-	width: 35px;
-	background-position: left;
-	background-repeat: repeat-x;
+.catalog-item-stars {
+	display: flex;
+	align-items: center;
 }
 
 .catalog-pagination-list {
-	list-style-type: none;
+	list-style: none;
 	display: flex;
+	gap: 8px;
 	margin: 0;
 	padding: 0;
 }
 
-.catalog-pagination-item:not(:last-child) {
-	margin-right: 8px;
-}
-
 .catalog-pagination-link {
-	display: block;
-	line-height: 36px;
+	display: grid;
+	place-items: center;
 	min-width: 60px;
-	padding: 12px 24px;
+	height: 60px;
+	line-height: 36px;
 }

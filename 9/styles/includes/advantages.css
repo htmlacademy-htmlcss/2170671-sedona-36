@@ -31,6 +31,7 @@
 }
 
 .advantages-item-container {
+	position: relative;
 	display: grid;
 	width: 400px;
 	place-items: center;
@@ -46,6 +47,7 @@
 	height: 2px;
 	background: rgb(255 255 255 / 0.3);
 	top: 190px;
+	left: calc(50% - 30px);
 }
 
 .advantages-item-container-line::before {
@@ -54,7 +56,8 @@
 	width: 60px;
 	height: 2px;
 	background: rgb(0 0 0 / 0.3);
-	top: 190px;
+	top: 200px;
+	left: calc(50% - 30px);
 }
 
 .advantages-item-title {
@@ -76,8 +79,8 @@
 	display: flex;
 }
 
-.advantages-item-town h3,
-.advantages-item-bridge h3 {
+.advantages-item-town .advantages-item-title,
+.advantages-item-bridge .advantages-item-title {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
@@ -87,8 +90,8 @@
 	margin-bottom: 62px;
 }
 
-.advantages-item-town p,
-.advantages-item-bridge p {
+.advantages-item-town .advantages-item-description,
+.advantages-item-bridge .advantages-item-description {
 	font-size: 18px;
 	line-height: 21px;
 	color: #ffffff;
@@ -100,9 +103,9 @@
 	width: 400px;
 }
 
-.advantages-item-square h3,
-.advantages-item-road h3,
-.advantages-item-tourists h3 {
+.advantages-item-square .advantages-item-title,
+.advantages-item-road .advantages-item-title,
+.advantages-item-tourists .advantages-item-title {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
@@ -111,9 +114,9 @@
 	margin-bottom: 62px;
 }
 
-.advantages-item-square p,
-.advantages-item-road p,
-.advantages-item-tourists p {
+.advantages-item-square .advantages-item-description,
+.advantages-item-road .advantages-item-description,
+.advantages-item-tourists .advantages-item-description {
 	font-size: 18px;
 	line-height: 21px;
 }
