@@ -1,0 +1,30 @@
+.search {
+	text-align: center;
+	margin: 0;
+	padding-top: 96px;
+	padding-bottom: 96px;
+	background-color: #ffffff;
+}
+
+.search-title {
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.search-description {
+	text-align: center;
+	margin: 0 auto;
+	width: 592px;
+	margin-bottom: 54px;
+}
+
+.search-link {
+	display: inline-block;
+	min-width: 376px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20px;
+	line-height: 36px;
+	font-family: inherit;
+	padding: 8px 50px;
+}

@@ -1,0 +1,88 @@
+.service-container {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.service-title {
+	display: block;
+	margin: 0 auto;
+	width: 505px;
+	margin-bottom: 20px;
+}
+
+.service-description {
+	text-align: center;
+	width: 490px;
+	margin: 0 auto;
+}
+
+.service-company-list {
+	text-align: center;
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.service-company-item {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+
+.service-company-container {
+	padding: 81px 85px;
+	position: relative;
+}
+
+.service-company-container-house::before {
+	content: "";
+	position: absolute;
+	background-image: url(../../images/icons/advantage-icon-1.svg);
+	width: 75px;
+	height: 72px;
+	top: 81px;
+	right: 162px;
+}
+
+.service-company-container-food::before {
+	content: "";
+	position: absolute;
+	background-image: url(../../images/icons/advantage-icon-2.svg);
+	width: 74px;
+	height: 70px;
+	top: 81px;
+	right: 162px;
+}
+
+.service-company-container-souvenirs::before {
+	content: "";
+	position: absolute;
+	background-image: url(../../images/icons/advantage-icon-3.svg);
+	width: 70px;
+	height: 76px;
+	top: 81px;
+	right: 168px;
+}
+
+.service-company-title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	margin-top: 102px;
+	margin-bottom: 30px;
+}
+
+.service-company-description {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	margin: 0;
+	padding: 0;
+}
+
+.service-company-item-hous,
+.service-company-item-souvenirs {
+	background-color: rgb(131 179 211 / 0.12);
+}

@@ -1,0 +1,23 @@
+.hero {
+	background-image: url("../images/index-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero::after {
+	content: "";
+	position: absolute;
+	display: block;
+	background-image: url("../../images/icons/zigzag.svg");
+	width: 1200px;
+	height: 57px;
+	top: 428px;
+}
+
+.hero-img-logo {
+	padding-top: 51px;
+	padding-bottom: 82px;
+	display: block;
+	margin: 0 auto;
+}
