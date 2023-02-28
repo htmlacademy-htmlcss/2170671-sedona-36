@@ -1,8 +1,12 @@
+.service-container {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
 .service-title {
 	display: block;
 	margin: 0 auto;
 	width: 505px;
-	padding-top: 64px;
 	margin-bottom: 20px;
 }
 
@@ -10,7 +14,6 @@
 	text-align: center;
 	width: 490px;
 	margin: 0 auto;
-	padding-bottom: 64px;
 }
 
 .service-company-list {
@@ -67,7 +70,7 @@
 	font-size: 24px;
 	line-height: 28px;
 	text-transform: uppercase;
-	padding-top: 102px;
+	margin-top: 102px;
 	margin-bottom: 30px;
 }
 

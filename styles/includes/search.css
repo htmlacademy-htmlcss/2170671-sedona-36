@@ -1,13 +1,13 @@
 .search {
 	text-align: center;
 	margin: 0;
-	padding: 0;
+	padding-top: 96px;
+	padding-bottom: 96px;
 	background-color: #ffffff;
 }
 
 .search-title {
 	margin: 0 auto;
-	padding-top: 96px;
 	margin-bottom: 20px;
 }
 
@@ -27,5 +27,4 @@
 	line-height: 36px;
 	font-family: inherit;
 	padding: 8px 50px;
-	margin-bottom: 96px;
 }

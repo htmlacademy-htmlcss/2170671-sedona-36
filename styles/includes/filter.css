@@ -62,17 +62,18 @@
 .filter-form {
 	display: flex;
 	justify-content: space-between;
+	gap: 70px;
 }
 
 .filter-group {
-	width: 150px;
-	margin-right: 70px;
+	margin: 0;
+	padding: 0;
+	border: none;
 }
 
 .filter-price {
 	width: 288px;
-	margin-left: 70px;
-	margin-right: 70px;
+	margin-left: auto;
 }
 
 .filter-group-title {
@@ -84,7 +85,9 @@
 
 .filter-list,
 .menu-filter-list {
-	list-style-type: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .control-infrastructure {
