@@ -9,7 +9,7 @@
 	content: "";
 	position: absolute;
 	display: block;
-	background-image: url("../../images/icons/zigzag.svg");
+	background-image: url("../images/zigzag.svg");
 	width: 1200px;
 	height: 57px;
 	top: 428px;

@@ -20,7 +20,7 @@
 	width: 7px;
 	height: 20px;
 	position: absolute;
-	background-image: url("../../images/icons/arrow-icon.svg");
+	background-image: url("../images/arrow-icon.svg");
 	background-repeat: no-repeat;
 	left: 23px;
 }
@@ -54,7 +54,7 @@
 .header-inner-link-house {
 	min-width: 12px;
 	min-height: 12px;
-	background-image: url("../../images/icons/home-icon.svg");
+	background-image: url("../images/home-icon.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }

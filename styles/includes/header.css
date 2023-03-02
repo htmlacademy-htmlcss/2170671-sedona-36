@@ -87,13 +87,13 @@
 }
 
 .navigation-user-search {
-	background-image: url(../../images/icons/icon-search.svg);
+	background-image: url(../images/icon-search.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .navigation-user-like {
-	background-image: url(../../images/icons/icon-heart.svg);
+	background-image: url(../images/icon-heart.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
