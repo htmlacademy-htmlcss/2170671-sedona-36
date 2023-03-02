@@ -562,10 +562,18 @@ img {
 	font-size: 18px;
 	background-color: #f2f2f2;
 	line-height: 24px;
-	color: rgb(0 0 0 / 0.6);
-	margin-right: 0;
 	border-radius: 4px 0 0 4px;
 	border: 2px solid transparent;
+	padding: 14px 20px;
+}
+
+.subscribe-input:focus-visible,
+.subscribe-input:hover {
+	border: 2px solid #000000;
+}
+
+.subscribe-input:disabled {
+	border: 0;
 }
 
 .subscribe-email-button {
@@ -731,6 +739,7 @@ img {
 	font-size: 20px;
 	line-height: 24px;
 	color: #ffffff;
+	margin-bottom: 32px;
 }
 
 .filter-list,
@@ -740,14 +749,106 @@ img {
 	margin: 0;
 }
 
+.menu-filter-list {
+	align-self: end;
+}
+
+.filter-item:not(:last-child) {
+	margin-bottom: 16px;
+}
+
 .control-infrastructure {
 	font-size: 18px;
 	line-height: 23px;
 	color: #ffffff;
+	position: relative;
+	display: block;
+	padding-left: 36px;
 }
 
-.filter-button {
+.control-mark {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #ffffff;
+	border-radius: 4px;
+}
+
+.control-infrastructure:hover .control-label,
+.control-infrastructure:hover .control-mark {
+	opacity: 0.6;
+}
+
+.control-infrastructure:disabled + .control-mark,
+.control-input:disabled + .control-label {
+	opacity: 0.3;
+}
+
+.control-input:active + .control-label,
+.control-input:active + .control-mark {
+	opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+	content: "";
+	position: absolute;
+	width: 13px;
+	height: 10px;
+	top: 5px;
+	left: 4px;
+	background-image: url(../../images/check-mark.svg);
+	background-repeat: no-repeat;
+}
+
+.control-input[type="radio"] + .control-mark {
+	border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 10px;
+	background-color: #3f5e72;
+	border-radius: 50%;
+	content: "";
+}
+
+.button-apply {
+	padding: 8px 50px;
+	margin-bottom: 32px;
+}
+
+.button-reset {
 	background-color: transparent;
+	min-width: 191px;
+	display: grid;
+	padding: 8px 0;
+	align-items: center;
+	justify-items: center;
+	place-items: center;
+}
+
+.button-reset:hover {
+	color: #ffffff;
+	background-color: transparent;
+	opacity: 0.6;
+}
+
+.button-reset:focus-visible {
+	outline: 0;
+	border: 3px solid #83b3d3;
+	background-color: transparent;
+}
+
+.button-reset:active {
+	background-color: transparent;
+	color: rgb(255 255 255 / 0.3);
 }
 
 .catalog {
