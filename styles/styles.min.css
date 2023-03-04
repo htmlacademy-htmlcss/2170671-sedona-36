@@ -63,22 +63,26 @@ img {
 	flex-grow: 1;
 }
 
-.button,
 .main-title {
 	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.main-title {
 	font-size: 30px;
 	line-height: 36px;
+	text-transform: uppercase;
 	text-align: center;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	appearance: none;
+	appearance: none;
 }
 
 .button {
 	color: #ffffff;
 	background-color: #82b3d3;
 	font-family: inherit;
+	font-weight: 700;
+	text-transform: uppercase;
 	text-decoration: none;
 	text-decoration: none;
 	font-size: 16px;
@@ -750,7 +754,7 @@ img {
 }
 
 .menu-filter-list {
-	align-self: end;
+	padding: 56px 0 0;
 }
 
 .filter-item:not(:last-child) {
@@ -817,6 +821,96 @@ img {
 	background-color: #3f5e72;
 	border-radius: 50%;
 	content: "";
+}
+
+.filter-price-description {
+	display: flex;
+	gap: 2px;
+	position: relative;
+	margin: 0 0 36px;
+}
+
+.filter-price-input,
+.filter-price-label .input-price-text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #a9a9a9;
+}
+
+.filter-price-input {
+	color: #000000;
+	font-weight: 700;
+	font-family: inherit;
+	background-color: #f2f2f2;
+	border: 0;
+	width: 143px;
+	padding: 12px 20px;
+}
+
+.filter-price-input__from {
+	border-radius: 4px 0 0 4px;
+}
+
+.filter-price-input__to {
+	border-radius: 0 4px 4px 0;
+}
+
+.input-price-text__from {
+	position: absolute;
+	top: 12px;
+	left: 106px;
+}
+
+.input-price-text__to {
+	position: absolute;
+	top: 12px;
+	right: 20px;
+}
+
+.filter-range-scale {
+	position: relative;
+	height: 4px;
+	background-color: rgb(255 255 255 / 0.3);
+	margin: 0;
+	padding: 0;
+}
+
+.filter-range-bar,
+.range-button {
+	position: absolute;
+	height: 4px;
+	background-color: #ffffff;
+}
+
+.range-button {
+	width: 20px;
+	height: 20px;
+	border: 0;
+	border-radius: 5px;
+}
+
+.range-button-min {
+	top: -8px;
+	right: 0;
+}
+
+.range-button-max {
+	top: -8px;
+}
+
+.range-button:hover {
+	box-shadow: 0 4px 10px rgb(0 0 0 / 0.25);
+}
+
+.range-button:focus-visible {
+	outline: 3px solid #83b3d3;
+	box-shadow: 0 4px 10px rgb(0 0 0 / 0.25);
+}
+
+.range-button:active {
+	outline: 3px solid #83b3d3;
+	box-shadow: 0 4px 10px rgb(0 0 0 / 0.4);
 }
 
 .button-apply {

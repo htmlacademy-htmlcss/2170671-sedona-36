@@ -152,20 +152,34 @@
 							<legend class="filter-group-title">
 								Стоимость, ₽:
 							</legend>
-							<p class="filter-price-description">
+							<div class="filter-price-description">
 								<label class="filter-price-label">
-									От
-									<input class="filter-price-input" type="number" value="0" min="0" max="11000">
+									<input class="filter-price-input filter-price-input__from" type="number" value="0" min="0" max="11000">
+									<span class="input-price-text input-price-text__from">
+										От
+									</span>
 								</label>
 								<label class="filter-price-label">
-									До
-									<input class="filter-price-input" type="number" value="9000" min="0" max="11000">
+									<input class="filter-price-input filter-price-input__to" type="number" value="9000" min="0" max="11000">
+									<span class="input-price-text input-price-text__to">
+										До
+									</span>
 								</label>
-							</p>
-							<p class="filter-price-description">
-							<input class="filter-price-min-input" type="range" min="0" max="11000" step="100" aria-label="Минимальная цена">
-							<input class="filter-price-max-input" type="range" min="0" max="11000" step="100" aria-label="Максимальная цена">
-							</p>
+							</div>
+							<div class="filter-range-scale">
+								<div class="filter-range-bar" style="right: 61px; width: 226px;" >
+									<button class="range-button range-button-min">
+										<span class="visually-hidden">
+											Изменить минимальную цену
+										</span>
+									</button>
+									<button class="range-button range-button-max">
+										<span class="visually-hidden">
+											Изменить максимальную цену
+										</span>
+									</button>
+								</div>
+							</div>
 						</fieldset>
 						<menu class="menu-filter-list">
 							<li class="menu-filter-item">
