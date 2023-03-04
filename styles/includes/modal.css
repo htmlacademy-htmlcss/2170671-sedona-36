@@ -1,0 +1,19 @@
+.modal-form {
+	padding: 64px 70px;
+	background: #ffffff;
+	box-shadow: 0 25px 50px rgb(0 0 0 / 0.15);
+	border-radius: 30px;
+	border: none;
+	width: 717px;
+}
+
+.modal-title {
+	font-family: "PT Sans", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	padding: 0;
+	margin: 0;
+	text-align: start;
+}

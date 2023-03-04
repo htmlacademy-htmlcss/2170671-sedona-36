@@ -178,7 +178,9 @@
 	line-height: 36px;
 }
 
-.catalog-pagination-link-success {
+.catalog-pagination-link-success,
+.catalog-pagination-link-success:hover,
+.catalog-pagination-link-success:focus-visible {
 	background-color: #f2f2f2;
 	color: #000000;
 }

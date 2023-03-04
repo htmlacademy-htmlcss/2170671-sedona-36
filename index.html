@@ -48,7 +48,7 @@
 					</a>
 				</li>
 				<li class="navigation-item navigation-user-item">
-					<button class="button button--secondary navigation-button" type="button">
+					<button class="button button--secondary navigation-button" type="button" onclick="window['modal-form'].showModal()">
 						Хочу сюда!
 					</button>
 				</li>
@@ -242,5 +242,72 @@
 				</a>
 			</small>
 		</footer>
+		<dialog id="modal-form" class="modal-form">
+			<h2 class="modal-title">
+				Поиск гостиницы в Седоне
+			</h2>
+			<form method="dialog">
+				<button>
+					<span class="visually-hidden">
+						Закрыть
+					</span>
+				</button>
+			</form>
+			<form action="https://echo.htmlacademy.ru/" method="post">
+				<div class="modal-container">
+					<div class="date-start-container">
+						<label class="date-start">
+							Дата заезда:
+							<input class="date-start-input" type="text" name="arrival-date" placeholder="Введите дату заезда">
+						</label>
+						<p class="message-error">
+							Мы не можем отправить вас в прошлое.
+						</p>
+					</div>
+					<div class="date-end-container">
+						<label class="date-end">
+							Дата выезда:
+							<input class="date-end-input" type="text" name="date-of-departure" placeholder="Введите дату выезда">
+						</label>
+						<p class="message-description">
+							На эти даты есть свободные номера. Пока есть.
+						</p>
+					</div>
+				</div>
+				<div class="guests-number">
+					<label class="adults-guests" for="adults-number">
+						Взрослые:
+					</label>
+					<button class="button-minus" type="button">
+						<span class="visually-hidden">
+							Плюс один
+						</span>
+					</button>
+					<input class="adults-number" type="number" id="adults-number" name="adults-number" placeholder="2">
+					<button class="button-plus" type="button">
+						<span class="visually-hidden">
+							Минус один
+						</span>
+					</button>
+					<label class="adults-guests" for="children-number">
+						Дети:
+					</label>
+					<button class="button-minus" type="button">
+						<span class="visually-hidden">
+							Плюс один
+						</span>
+					</button>
+					<input class="children-number" type="number" id="children-number" name="children-number" placeholder="2">
+					<button class="button-plus" type="button">
+						<span class="visually-hidden">
+							Минус один
+						</span>
+					</button>
+				</div>
+				<button class="find-result" type="submit">
+					Найти
+				</button>
+			</form>
+		</dialog>
 	</body>
 </html>
