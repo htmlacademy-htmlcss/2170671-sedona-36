@@ -827,7 +827,7 @@ input::-webkit-outer-spin-button {
 	display: flex;
 	gap: 2px;
 	position: relative;
-	margin: 0 0 36px;
+	margin: 0 0 48px;
 }
 
 .filter-price-input,
@@ -846,6 +846,15 @@ input::-webkit-outer-spin-button {
 	border: 0;
 	width: 143px;
 	padding: 12px 20px;
+}
+
+.filter-price-input:hover {
+	background-color: #e6e6e6;
+}
+
+.filter-price-input:focus-visible {
+	outline: 3px solid #83b3d3;
+	background-color: #e6e6e6;
 }
 
 .filter-price-input__from {
@@ -974,6 +983,25 @@ input::-webkit-outer-spin-button {
 	min-width: 292px;
 	height: 49px;
 	margin-left: auto;
+	padding: 14px 20px;
+	appearance: none;
+	appearance: none;
+	background-image: url(../../images/select-check.svg);
+	background-repeat: no-repeat;
+	background-position: center right 20px;
+}
+
+.catalog-select:hover {
+	border: 2px solid #68a2ca;
+}
+
+.catalog-select:focus-visible {
+	outline: 2px solid #68a2ca;
+}
+
+.catalog-select:disabled {
+	color: rgb(0 0 0 / 0.3);
+	background-color: rgb(0 0 0 / 0.3);
 }
 
 .catalog-button-container {
@@ -1104,4 +1132,9 @@ input::-webkit-outer-spin-button {
 	min-width: 60px;
 	height: 60px;
 	line-height: 36px;
+}
+
+.catalog-pagination-link-success {
+	background-color: #f2f2f2;
+	color: #000000;
 }

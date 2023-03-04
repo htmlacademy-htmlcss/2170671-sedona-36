@@ -172,7 +172,7 @@
 	gap: 2px;
 	margin: 0;
 	position: relative;
-	margin-bottom: 36px;
+	margin-bottom: 48px;
 }
 
 .filter-price-label .input-price-text {
@@ -192,6 +192,15 @@
 	border: none;
 	width: 143px;
 	padding: 12px 20px;
+}
+
+.filter-price-input:hover {
+	background-color: #e6e6e6;
+}
+
+.filter-price-input:focus-visible {
+	outline: 3px solid #83b3d3;
+	background-color: #e6e6e6;
 }
 
 .filter-price-input__from {
