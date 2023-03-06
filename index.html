@@ -247,27 +247,28 @@
 				Поиск гостиницы в Седоне
 			</h2>
 			<form method="dialog">
-				<button>
-					<span class="visually-hidden">
-						Закрыть
-					</span>
+				<button class="button-close">
+					<svg class="button-close-image" role="img" aria-labelledby="button-cancel" width="14" height="14" fill="currentColor">
+						<title id="button-cancel">Закрыть</title>
+						<use href="images/stack.svg#button-cancel"/>
+					</svg>
 				</button>
 			</form>
 			<form action="https://echo.htmlacademy.ru/" method="post">
 				<div class="modal-container">
 					<div class="date-start-container">
-						<label class="date-start">
+						<label class="label-guests date-start">
 							Дата заезда:
-							<input class="date-start-input" type="text" name="arrival-date" placeholder="Введите дату заезда">
+							<input class="modal-input date-start-input" type="text" name="arrival-date" placeholder="Укажите дату" value="27 апреля 2020">
 						</label>
-						<p class="message-error">
+						<p class="message-description message-error">
 							Мы не можем отправить вас в прошлое.
 						</p>
 					</div>
 					<div class="date-end-container">
-						<label class="date-end">
+						<label class="label-guests date-end">
 							Дата выезда:
-							<input class="date-end-input" type="text" name="date-of-departure" placeholder="Введите дату выезда">
+							<input class="modal-input date-end-input" type="text" name="date-of-departure" placeholder="Укажите дату" value="1 сентября 2023">
 						</label>
 						<p class="message-description">
 							На эти даты есть свободные номера. Пока есть.
@@ -275,36 +276,48 @@
 					</div>
 				</div>
 				<div class="guests-number">
-					<label class="adults-guests" for="adults-number">
-						Взрослые:
-					</label>
-					<button class="button-minus" type="button">
-						<span class="visually-hidden">
-							Плюс один
-						</span>
-					</button>
-					<input class="adults-number" type="number" id="adults-number" name="adults-number" placeholder="2">
-					<button class="button-plus" type="button">
-						<span class="visually-hidden">
-							Минус один
-						</span>
-					</button>
-					<label class="adults-guests" for="children-number">
-						Дети:
-					</label>
-					<button class="button-minus" type="button">
-						<span class="visually-hidden">
-							Плюс один
-						</span>
-					</button>
-					<input class="children-number" type="number" id="children-number" name="children-number" placeholder="2">
-					<button class="button-plus" type="button">
-						<span class="visually-hidden">
-							Минус один
-						</span>
-					</button>
+					<div class="adults-guests-container">
+						<label class="label-guests adults-guests" for="adults-number">
+							Взрослые:
+						</label>
+						<div class="button-container">
+							<button class="button-minus" type="button">
+								<svg role="img" aria-labelledby="button-minus-adults" width="14" height="2" fill="currentColor">
+									<title id="button-minus-adults">Минус один</title>
+									<use href="images/stack.svg#button-minus"/>
+								</svg>
+							</button>
+							<input class="input-guests adults-number" type="number" id="adults-number" name="adults-number" value="2">
+							<button class="button-plus" type="button">
+								<svg role="img" aria-labelledby="button-plus-adults" width="14" height="14" fill="currentColor">
+									<title id="button-plus-adults">Плюс один</title>
+									<use href="images/stack.svg#button-plus"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="children-guests-container">
+						<label class="label-guests children-guests" for="children-number">
+							Дети:
+						</label>
+						<div class="button-container">
+							<button class="button-minus-children" type="button">
+								<svg role="img" aria-labelledby="button-minus-children" width="14" height="2" fill="currentColor">
+									<title id="button-minus-children">Минус один</title>
+									<use href="images/stack.svg#button-minus"/>
+								</svg>
+							</button>
+							<input class="input-guests children-number" type="number" id="children-number" name="children-number" value="2">
+							<button class="button-plus" type="button">
+								<svg role="img" aria-labelledby="button-plus-children" width="14" height="14" fill="currentColor">
+									<title id="button-plus-children">Плюс один</title>
+									<use href="images/stack.svg#button-plus"/>
+								</svg>
+							</button>
+						</div>
+					</div>
 				</div>
-				<button class="find-result" type="submit">
+				<button class="button find-result" type="submit">
 					Найти
 				</button>
 			</form>

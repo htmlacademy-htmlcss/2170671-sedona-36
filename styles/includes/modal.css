@@ -15,5 +15,156 @@
 	line-height: 36px;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 64px;
 	text-align: start;
+}
+
+.button-close {
+	position: absolute;
+	top: 64px;
+	left: 633px;
+	background-color: #f2f2f2;
+	width: 52px;
+	height: 52px;
+	border: none;
+	border-radius: 50%;
+	color: #000000;
+}
+
+.button-close:hover {
+	background-color: #e6e6e6;
+}
+
+.button-close:focus-visible {
+	outline: 3px solid #83b3d3;
+}
+
+.button-close:active .button-close-image {
+	color: #a1a1a1;
+	background-color: #e6e6e6;
+}
+
+.date-start {
+	display: flex;
+	gap: 24px;
+	margin-bottom: 4px;
+}
+
+.message-error {
+	margin: 0;
+	margin-bottom: 23px;
+	padding: 0;
+}
+
+.date-end {
+	display: flex;
+	gap: 18px;
+	margin-bottom: 4px;
+}
+
+.message-description {
+	margin: 0;
+	margin-bottom: 23px;
+	padding: 0;
+}
+
+.guests-number {
+	display: flex;
+	gap: 88px;
+	margin-bottom: 48px;
+}
+
+.button-minus {
+	width: 40px;
+	height: 48px;
+	background-color: #f2f2f2;
+	border: none;
+	display: grid;
+	place-items: center;
+}
+
+.button-plus {
+	width: 40px;
+	height: 48px;
+	background-color: #f2f2f2;
+	border: none;
+	display: grid;
+	place-items: center;
+}
+
+.input-guests {
+	width: 31px;
+	height: 48px;
+	font-family: "PT Sans", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	color: #000000;
+	padding: 14px 8px;
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.adults-guests-container {
+	display: flex;
+	gap: 46px;
+}
+
+.children-guests-container {
+	display: flex;
+	gap: 82px;
+}
+
+.button-container {
+	display: flex;
+}
+
+.label-guests {
+	font-family: "PT Sans", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	place-items: center;
+}
+
+.message-description {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	margin-left: 157px;
+}
+
+.message-error {
+	color: #ff5757;
+}
+
+.modal-input {
+	font-family: "PT Sans", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 12px 20px;
+	min-width: 440px;
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.modal-input:hover {
+	background-color: #e6e6e6;
+}
+
+.modal-input:focus-visible {
+	outline: 3px solid #83b3d3;
+}
+
+.find-result {
+	width: 577px;
+	height: 60px;
+	border-radius: 10px;
 }
