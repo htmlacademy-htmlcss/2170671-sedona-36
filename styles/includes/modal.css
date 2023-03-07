@@ -83,6 +83,20 @@
 	place-items: center;
 }
 
+.button-minus:hover svg {
+	background-color: #000000;
+}
+
+.button-minus:focus-visible svg {
+	padding: 3px 9px;
+	border: 3px solid #82b3d3;
+	outline: none;
+}
+
+.button-minus:active svg {
+	background-color: #cccccc;
+}
+
 .button-plus {
 	width: 40px;
 	height: 48px;
@@ -90,6 +104,21 @@
 	border: none;
 	display: grid;
 	place-items: center;
+	color: #cdc7c4;
+}
+
+.button-plus:hover svg {
+	color: #000000;
+}
+
+.button-plus:focus-visible svg {
+	padding: 3px 9px;
+	border: 3px solid #82b3d3;
+	outline: none;
+}
+
+.button-plus:active svg {
+	background-color: #cccccc;
 }
 
 .input-guests {
@@ -167,4 +196,53 @@
 	width: 577px;
 	height: 60px;
 	border-radius: 10px;
+}
+
+.children-guests {
+	position: relative;
+}
+
+.tooltip {
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	right: 235px;
+	top: 362px;
+}
+
+.tooltip-toggle {
+	background-image: url(../../images/tooltip.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 26px;
+	height: 26px;
+	border: none;
+	background-color: #83b3d3;
+	border-radius: 50%;
+	margin: 0;
+	padding: 0;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.tooltip-text {
+	font-family: "PT Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 15px 18px 18px 22px;
+	width: 256px;
+	color: #ffffff;
+	background-color: #333333;
+	border-radius: 10px;
+	position: absolute;
+	right: -130px;
+	display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+	display: block;
 }

@@ -1219,25 +1219,60 @@ input::-webkit-outer-spin-button {
 	margin-bottom: 48px;
 }
 
-.button-minus,
-.button-plus,
-.input-guests {
+.button-minus {
+	width: 40px;
 	height: 48px;
 	background-color: #f2f2f2;
 	border: 0;
-}
-
-.button-minus,
-.button-plus {
-	width: 40px;
 	display: grid;
 	align-items: center;
 	justify-items: center;
 	place-items: center;
 }
 
+.button-minus:hover svg {
+	background-color: #000000;
+}
+
+.button-minus:focus-visible svg {
+	padding: 3px 9px;
+	border: 3px solid #82b3d3;
+	outline: 0;
+}
+
+.button-minus:active svg {
+	background-color: #cccccc;
+}
+
+.button-plus {
+	width: 40px;
+	height: 48px;
+	background-color: #f2f2f2;
+	border: 0;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	place-items: center;
+	color: #cdc7c4;
+}
+
+.button-plus:hover svg {
+	color: #000000;
+}
+
+.button-plus:focus-visible svg {
+	padding: 3px 9px;
+	border: 3px solid #82b3d3;
+	outline: 0;
+}
+
+.button-plus:active svg {
+	background-color: #cccccc;
+}
+
 .input-guests {
 	width: 31px;
+	height: 48px;
 	font-family: "PT Sans", sans-serif;
 	font-style: normal;
 	font-weight: 700;
@@ -1245,6 +1280,8 @@ input::-webkit-outer-spin-button {
 	line-height: 20px;
 	color: #000000;
 	padding: 14px 8px;
+	background-color: #f2f2f2;
+	border: 0;
 }
 
 .adults-guests-container {
@@ -1310,4 +1347,51 @@ input::-webkit-outer-spin-button {
 	width: 577px;
 	height: 60px;
 	border-radius: 10px;
+}
+
+.children-guests {
+	position: relative;
+}
+
+.tooltip {
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	right: 235px;
+	top: 362px;
+}
+
+.tooltip-toggle {
+	background-image: url(../../images/tooltip.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 26px;
+	height: 26px;
+	border: 0;
+	background-color: #83b3d3;
+	border-radius: 50%;
+	padding: 0;
+	margin: 0 0 15px 10px;
+	position: relative;
+}
+
+.tooltip-text {
+	font-family: "PT Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 15px 18px 18px 22px;
+	width: 256px;
+	color: #ffffff;
+	background-color: #333333;
+	border-radius: 10px;
+	position: absolute;
+	right: -130px;
+	display: none;
+}
+
+.tooltip-toggle:focus + .tooltip-text,
+.tooltip-toggle:hover + .tooltip-text {
+	display: block;
 }
