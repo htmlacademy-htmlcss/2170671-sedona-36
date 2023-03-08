@@ -17,7 +17,6 @@
 		"postcss-csso": "^6.0.1",
 		"postcss-import": "^15.1.0",
 		"postcss-preset-env": "^8.0.1",
-		"pre-commit": "^1.2.2",
 		"stylelint": "^14.16.1",
 		"stylelint-config-firefoxic": "1.0.0"
 	},
@@ -41,7 +40,6 @@
 		"scritps/**/*.js"
 	],
 	"type": "module",
-	"precommit": "lint",
 	"volta": {
 		"node": "18.14.0"
 	}
