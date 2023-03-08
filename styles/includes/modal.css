@@ -4,7 +4,11 @@
 	box-shadow: 0 25px 50px rgb(0 0 0 / 0.15);
 	border-radius: 30px;
 	border: none;
-	width: 717px;
+	max-width: 100%;
+}
+
+.modal-form::backdrop {
+	background: rgb(242 242 242 / 0.8);
 }
 
 .modal-title {
@@ -13,6 +17,7 @@
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
+	text-transform: uppercase;
 	padding: 0;
 	margin: 0;
 	margin-bottom: 64px;
@@ -44,10 +49,10 @@
 	background-color: #e6e6e6;
 }
 
-.date-start {
-	display: flex;
-	gap: 24px;
-	margin-bottom: 4px;
+.date-container {
+	display: grid;
+	grid-template-columns: 135px 440px;
+	row-gap: 4px;
 }
 
 .message-error {
@@ -56,16 +61,15 @@
 	padding: 0;
 }
 
-.date-end {
-	display: flex;
-	gap: 18px;
-	margin-bottom: 4px;
-}
-
 .message-description {
 	margin: 0;
 	margin-bottom: 23px;
 	padding: 0;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	grid-column: 2 / -1;
 }
 
 .guests-number {
@@ -74,64 +78,38 @@
 	margin-bottom: 48px;
 }
 
-.button-minus {
+.modal-button {
 	width: 40px;
 	height: 48px;
-	background-color: #f2f2f2;
 	border: none;
 	display: grid;
 	place-items: center;
+	color: rgb(0 0 0 / 0.3);
 }
 
-.button-minus:hover svg {
-	background-color: #000000;
-}
-
-.button-minus:focus-visible svg {
-	padding: 3px 9px;
-	border: 3px solid #82b3d3;
-	outline: none;
-}
-
-.button-minus:active svg {
-	background-color: #cccccc;
-}
-
-.button-plus {
-	width: 40px;
-	height: 48px;
-	background-color: #f2f2f2;
-	border: none;
-	display: grid;
-	place-items: center;
-	color: #cdc7c4;
-}
-
-.button-plus:hover svg {
+.modal-button:hover {
 	color: #000000;
 }
 
-.button-plus:focus-visible svg {
-	padding: 3px 9px;
-	border: 3px solid #82b3d3;
-	outline: none;
+.modal-button:focus-visible {
+	outline: 3px solid #82b3d3;
 }
 
-.button-plus:active svg {
-	background-color: #cccccc;
+.modal-button:active {
+	color: rgb(0 0 0 / 0.2);
 }
 
 .input-guests {
-	width: 31px;
-	height: 48px;
-	font-family: "PT Sans", sans-serif;
+	width: 100%;
+	height: 100%;
+	font-family: inherit;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 20px;
 	color: #000000;
-	padding: 14px 8px;
-	background-color: #f2f2f2;
+	padding: 0 8px;
+	background-color: transparent;
 	border: none;
 }
 
@@ -146,7 +124,10 @@
 }
 
 .button-container {
-	display: flex;
+	display: grid;
+	grid-template-columns: 40px 31px 40px;
+	place-items: center;
+	background-color: #f2f2f2;
 }
 
 .label-guests {
@@ -159,21 +140,12 @@
 	place-items: center;
 }
 
-.message-description {
-	font-family: "PT Sans";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 21px;
-	margin-left: 157px;
-}
-
 .message-error {
 	color: #ff5757;
 }
 
 .modal-input {
-	font-family: "PT Sans", sans-serif;
+	font-family: inherit;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
@@ -182,6 +154,10 @@
 	min-width: 440px;
 	background-color: #f2f2f2;
 	border: none;
+	border-radius: 4px;
+	background-image: url(../../images/date.svg);
+	background-position: center right 20px;
+	background-repeat: no-repeat;
 }
 
 .modal-input:hover {

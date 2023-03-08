@@ -256,20 +256,20 @@
 			</form>
 			<form action="https://echo.htmlacademy.ru/" method="post">
 				<div class="modal-container">
-					<div class="date-start-container">
-						<label class="label-guests date-start">
+					<div class="date-container">
+						<label class="label-guests" for="date-start">
 							Дата заезда:
-							<input class="modal-input date-start-input" type="text" name="arrival-date" placeholder="Укажите дату" value="27 апреля 2020">
 						</label>
+						<input class="modal-input" id="date-start" type="text" name="arrival-date" placeholder="Укажите дату" value="27 апреля 2020">
 						<p class="message-description message-error">
 							Мы не можем отправить вас в прошлое.
 						</p>
 					</div>
-					<div class="date-end-container">
-						<label class="label-guests date-end">
+					<div class="date-container">
+						<label class="label-guests" for="date-end">
 							Дата выезда:
-							<input class="modal-input date-end-input" type="text" name="date-of-departure" placeholder="Укажите дату" value="1 сентября 2023">
 						</label>
+						<input class="modal-input" id="date-end" type="text" name="date-of-departure" placeholder="Укажите дату" value="1 сентября 2023">
 						<p class="message-description">
 							На эти даты есть свободные номера. Пока есть.
 						</p>
@@ -281,14 +281,14 @@
 							Взрослые:
 						</label>
 						<div class="button-container">
-							<button class="button-minus" type="button">
+							<button class="modal-button" type="button">
 								<svg role="img" aria-labelledby="button-minus-adults" width="14" height="2" fill="currentColor">
 									<title id="button-minus-adults">Минус один</title>
 									<use href="images/stack.svg#button-minus"/>
 								</svg>
 							</button>
 							<input class="input-guests adults-number" type="number" id="adults-number" name="adults-number" value="2">
-							<button class="button-plus" type="button">
+							<button class="modal-button" type="button">
 								<svg role="img" aria-labelledby="button-plus-adults" width="14" height="14" fill="currentColor">
 									<title id="button-plus-adults">Плюс один</title>
 									<use href="images/stack.svg#button-plus"/>
@@ -302,7 +302,7 @@
 								Дети:
 							</label>
 							<span class="tooltip">
-								<button class="tooltip-toggle">
+								<button type="button" class="tooltip-toggle">
 									<span class="visually-hidden">
 										Тултип
 									</span>
@@ -313,14 +313,14 @@
 							</span>
 						</span>
 						<div class="button-container">
-							<button class="button-minus" type="button">
+							<button class="modal-button" type="button">
 								<svg role="img" aria-labelledby="button-minus-children" width="14" height="2" fill="currentColor">
 									<title id="button-minus-children">Минус один</title>
 									<use href="images/stack.svg#button-minus"/>
 								</svg>
 							</button>
 							<input class="input-guests children-number" type="number" id="children-number" name="children-number" value="2">
-							<button class="button-plus" type="button">
+							<button class="modal-button" type="button">
 								<svg role="img" aria-labelledby="button-plus-children" width="14" height="14" fill="currentColor">
 									<title id="button-plus-children">Плюс один</title>
 									<use href="images/stack.svg#button-plus"/>

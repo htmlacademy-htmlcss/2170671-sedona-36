@@ -56,9 +56,9 @@
 	background-color: rgba(131 179 211 / 0.12);
 }
 
-.navigation-link:focus {
+.navigation-link:focus-visible {
 	background-color: rgba(131 179 211 / 0.12);
-	border: 1px solid #000000;
+	outline: 1px solid #000000;
 }
 
 .navigation-link:active {
