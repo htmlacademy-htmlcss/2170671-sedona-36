@@ -25,8 +25,25 @@
 	border: 2px solid #e5e5e5;
 	border-radius: 4px;
 	min-width: 292px;
-	height: 49px;
 	margin-left: auto;
+	padding: 14px 20px;
+	appearance: none;
+	background-image: url(../../images/select-check.svg);
+	background-repeat: no-repeat;
+	background-position: center right 20px;
+}
+
+.catalog-select:hover {
+	border: 2px solid #68a2ca;
+}
+
+.catalog-select:focus-visible {
+	outline: 2px solid #68a2ca;
+}
+
+.catalog-select:disabled {
+	color: rgb(0 0 0 / 0.3);
+	background-color: rgb(0 0 0 / 0.3);
 }
 
 .catalog-button-container {
@@ -39,14 +56,18 @@
 	min-height: 48px;
 	min-width: 48px;
 	border: 2px solid #e5e5e5;
+	border-radius: 4px;
+}
+
+.catalog-button-success {
+	border: 2px solid #000000;
 }
 
 .catalog-button:hover {
 	border: 2px solid #000000;
-	border-radius: 4px;
 }
 
-.catalog-button:focus {
+.catalog-button:focus-visible {
 	border: 2px solid #68a2ca;
 	border-radius: 4px;
 	outline: none;
@@ -58,19 +79,19 @@
 }
 
 .catalog-button-cards {
-	background-image: url("../../images/icons/view-icon-1.svg");
+	background-image: url("../images/view-icon-1.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .catalog-button-big-cards {
-	background-image: url("../../images/icons/view-icon-2.svg");
+	background-image: url("../images/view-icon-2.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .catalog-button-list {
-	background-image: url("../../images/icons/view-icon-3.svg");
+	background-image: url("../images/view-icon-3.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -154,4 +175,11 @@
 	min-width: 60px;
 	height: 60px;
 	line-height: 36px;
+}
+
+.catalog-pagination-link-success,
+.catalog-pagination-link-success:hover,
+.catalog-pagination-link-success:focus-visible {
+	background-color: #f2f2f2;
+	color: #000000;
 }

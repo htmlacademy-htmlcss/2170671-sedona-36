@@ -38,7 +38,7 @@
 .service-company-container-house::before {
 	content: "";
 	position: absolute;
-	background-image: url(../../images/icons/advantage-icon-1.svg);
+	background-image: url(../images/advantage-icon-1.svg);
 	width: 75px;
 	height: 72px;
 	top: 81px;
@@ -48,7 +48,7 @@
 .service-company-container-food::before {
 	content: "";
 	position: absolute;
-	background-image: url(../../images/icons/advantage-icon-2.svg);
+	background-image: url(../images/advantage-icon-2.svg);
 	width: 74px;
 	height: 70px;
 	top: 81px;
@@ -58,7 +58,7 @@
 .service-company-container-souvenirs::before {
 	content: "";
 	position: absolute;
-	background-image: url(../../images/icons/advantage-icon-3.svg);
+	background-image: url(../images/advantage-icon-3.svg);
 	width: 70px;
 	height: 76px;
 	top: 81px;

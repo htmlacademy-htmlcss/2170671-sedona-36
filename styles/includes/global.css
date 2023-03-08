@@ -17,6 +17,12 @@
 html {
 	background-color: #f2f2f2;
 	height: 100%;
+	scroll-behavior: smooth;
+	scrollbar-gutter: stable;
+}
+
+html:has(.modal-form:modal[open]) {
+	overflow: hidden;
 }
 
 body {
@@ -68,4 +74,9 @@ img {
 	line-height: 36px;
 	text-transform: uppercase;
 	text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	appearance: none;
 }

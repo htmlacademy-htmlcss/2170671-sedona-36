@@ -56,9 +56,9 @@
 	background-color: rgba(131 179 211 / 0.12);
 }
 
-.navigation-link:focus {
+.navigation-link:focus-visible {
 	background-color: rgba(131 179 211 / 0.12);
-	border: 1px solid #000000;
+	outline: 1px solid #000000;
 }
 
 .navigation-link:active {
@@ -87,13 +87,13 @@
 }
 
 .navigation-user-search {
-	background-image: url(../../images/icons/icon-search.svg);
+	background-image: url(../images/icon-search.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .navigation-user-like {
-	background-image: url(../../images/icons/icon-heart.svg);
+	background-image: url(../images/icon-heart.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;

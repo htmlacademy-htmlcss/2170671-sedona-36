@@ -20,7 +20,7 @@
 	width: 7px;
 	height: 20px;
 	position: absolute;
-	background-image: url("../../images/icons/arrow-icon.svg");
+	background-image: url("../images/arrow-icon.svg");
 	background-repeat: no-repeat;
 	left: 23px;
 }
@@ -54,7 +54,7 @@
 .header-inner-link-house {
 	min-width: 12px;
 	min-height: 12px;
-	background-image: url("../../images/icons/home-icon.svg");
+	background-image: url("../images/home-icon.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -71,16 +71,12 @@
 	border: none;
 }
 
-.filter-price {
-	width: 288px;
-	margin-left: auto;
-}
-
 .filter-group-title {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 24px;
 	color: #ffffff;
+	margin-bottom: 32px;
 }
 
 .filter-list,
@@ -90,12 +86,199 @@
 	margin: 0;
 }
 
+.menu-filter-list {
+	padding-top: 56px;
+}
+
+.filter-item:not(:last-child) {
+	margin-bottom: 16px;
+}
+
 .control-infrastructure {
 	font-size: 18px;
 	line-height: 23px;
 	color: #ffffff;
+	position: relative;
+	display: block;
+	padding-left: 36px;
 }
 
-.filter-button {
+.control-mark {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	inset: 0;
+	background-color: #ffffff;
+	border-radius: 4px;
+}
+
+.control-infrastructure:hover .control-mark {
+	opacity: 0.6;
+}
+
+.control-infrastructure:hover .control-label {
+	opacity: 0.6;
+}
+
+.control-infrastructure:disabled + .control-mark {
+	opacity: 0.3;
+}
+
+.control-input:disabled + .control-label {
+	opacity: 0.3;
+}
+
+.control-input:active + .control-label {
+	opacity: 0.3;
+}
+
+.control-input:active + .control-mark {
+	opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+	content: "";
+	position: absolute;
+	width: 13px;
+	height: 10px;
+	top: 5px;
+	left: 4px;
+	background-image: url(../../images/check-mark.svg);
+	background-repeat: no-repeat;
+}
+
+.control-input[type="radio"] + .control-mark {
+	border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 10px;
+	background-color: #3f5e72;
+	border-radius: 50%;
+	content: "";
+}
+
+.filter-price {
+	width: 288px;
+	margin-left: auto;
+}
+
+.filter-price-label {
+	text-transform: lowercase;
+	padding: 12px 20px;
+	background-color: #f2f2f2;
+	border-radius: 4px 0 0 4px;
+	font-size: 18px;
+	line-height: 24px;
+	color: rgb(0 0 0 / 0.3);
+	display: grid;
+	grid-template-columns: 1fr auto;
+}
+
+.filter-price-label:hover {
+	background-color: #e5e5e5;
+}
+
+.filter-price-label:focus-within {
+	background-color: #e5e5e5;
+	outline: 3px solid #83b3d3;
+}
+
+.filter-price-label:last-child {
+	border-radius: 0 4px 4px 0;
+}
+
+.filter-price-input {
+	background-color: transparent;
+	border: none;
+	font-family: inherit;
+	font-weight: 700;
+	outline: none;
+}
+
+.filter-price-description {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 2px;
+	margin-bottom: 56px;
+}
+
+.filter-range-scale {
+	position: relative;
+	height: 4px;
+	background-color: rgb(255 255 255 / 0.3);
+	margin: 0;
+	padding: 0;
+}
+
+.filter-range-bar {
+	position: absolute;
+	height: 4px;
+	background-color: #ffffff;
+}
+
+.range-button {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	border: none;
+	border-radius: 5px;
+}
+
+.range-button-min {
+	top: -8px;
+	right: 0;
+}
+
+.range-button-max {
+	top: -8px;
+}
+
+.range-button:hover {
+	box-shadow: 0 4px 10px rgb(0 0 0 / 0.25);
+}
+
+.range-button:focus-visible {
+	outline: 3px solid #83b3d3;
+	box-shadow: 0 4px 10px rgb(0 0 0 / 0.25);
+}
+
+.range-button:active {
+	outline: 3px solid #83b3d3;
+	box-shadow: 0 4px 10px rgb(0 0 0 / 0.4);
+}
+
+.button-apply {
+	padding: 8px 50px;
+	margin-bottom: 32px;
+}
+
+.button-reset {
 	background-color: rgb(0 0 0 / 0);
+	min-width: 191px;
+	display: grid;
+	padding: 8px 0;
+	place-items: center;
+}
+
+.button-reset:hover {
+	color: #ffffff;
+	background-color: transparent;
+	opacity: 0.6;
+}
+
+.button-reset:focus-visible {
+	outline: none;
+	border: 3px solid #83b3d3;
+	background-color: transparent;
+}
+
+.button-reset:active {
+	background-color: transparent;
+	color: rgb(255 255 255 / 0.3);
 }
