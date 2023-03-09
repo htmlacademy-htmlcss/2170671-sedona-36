@@ -180,6 +180,7 @@
 	color: rgb(0 0 0 / 0.3);
 	display: grid;
 	grid-template-columns: 1fr auto;
+	width: 143px;
 }
 
 .filter-price-label:hover {
