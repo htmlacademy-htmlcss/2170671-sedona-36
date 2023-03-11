@@ -3,7 +3,7 @@
 [![Project check][check-image]][check-url]
 
 * Студент: [Никита Зубалей](https://up.htmlacademy.ru/htmlcss/36/user/2170671).
-* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
+* Наставник: [Arthur Litovko](https://github.com/baileys-li), ранее [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
