@@ -47,8 +47,7 @@ body {
 
 img {
 	max-width: 100%;
-	height: auto;
-	box-sizing: border-box;
+	object-fit: contain;
 }
 
 .visually-hidden {
@@ -59,8 +58,8 @@ img {
 	border: 0;
 	padding: 0;
 	white-space: nowrap;
-	-webkit-clip-path: inset(100%);
-	        clip-path: inset(100%);
+	clip-path: inset(100%);
+	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
@@ -79,6 +78,6 @@ img {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	        appearance: none;
+	appearance: none;
+	appearance: none;
 }
