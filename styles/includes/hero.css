@@ -1,5 +1,6 @@
 .hero {
 	background-image: url("../images/index-background.jpg");
+	background-color: #524ea3;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
