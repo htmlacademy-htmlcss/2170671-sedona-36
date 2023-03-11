@@ -69,6 +69,7 @@
 	margin: 0;
 	padding: 0;
 	border: none;
+	min-width: 150px;
 }
 
 .filter-group-title {
@@ -77,6 +78,7 @@
 	line-height: 24px;
 	color: #ffffff;
 	margin-bottom: 32px;
+	padding: 0;
 }
 
 .filter-list,
@@ -107,6 +109,7 @@
 	position: absolute;
 	width: 20px;
 	height: 20px;
+	top: 2px;
 	inset: 0;
 	background-color: #ffffff;
 	border-radius: 4px;
@@ -136,15 +139,15 @@
 	opacity: 0.3;
 }
 
+.control-input:focus-visible + .control-mark {
+	outline: 3px solid #83b3d3;
+}
+
 .control-input[type="checkbox"]:checked + .control-mark::before {
-	content: "";
+	content: url(../../images/check-mark.svg);
 	position: absolute;
-	width: 13px;
-	height: 10px;
-	top: 5px;
+	top: -2px;
 	left: 4px;
-	background-image: url(../../images/check-mark.svg);
-	background-repeat: no-repeat;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -177,6 +180,7 @@
 	color: rgb(0 0 0 / 0.3);
 	display: grid;
 	grid-template-columns: 1fr auto;
+	width: 143px;
 }
 
 .filter-price-label:hover {
@@ -198,13 +202,15 @@
 	font-family: inherit;
 	font-weight: 700;
 	outline: none;
+	font-size: 18px;
+	line-height: 24px;
 }
 
 .filter-price-description {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 2px;
-	margin-bottom: 56px;
+	margin-bottom: 44px;
 }
 
 .filter-range-scale {
@@ -273,8 +279,7 @@
 }
 
 .button-reset:focus-visible {
-	outline: none;
-	border: 3px solid #83b3d3;
+	outline: 3px solid #83b3d3;
 	background-color: transparent;
 }
 

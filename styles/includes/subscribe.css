@@ -25,21 +25,19 @@
 
 .input-container {
 	display: flex;
-	width: 690px;
-	margin: 0 auto;
+	justify-content: center;
 }
 
 .subscribe-input {
-	min-width: 452px;
-	min-height: 52px;
+	min-width: 454px;
 	font-family: inherit;
 	font-weight: 400;
 	font-size: 18px;
 	background-color: #f2f2f2;
 	line-height: 24px;
 	border-radius: 4px 0 0 4px;
-	border: 2px solid transparent;
-	padding: 14px 20px;
+	border: 1px solid transparent;
+	padding: 13px 21px;
 }
 
 .subscribe-input:hover,
@@ -49,11 +47,15 @@
 
 .subscribe-input:disabled {
 	border: none;
+	background-color: rgb(255 255 255 / 0.6);
 }
 
 .subscribe-email-button {
+	font-family: inherit;
+	font-weight: 700;
 	font-size: 20px;
 	line-height: 36px;
 	padding: 8px 50px;
 	border-radius: 0 4px 4px 0;
+	min-width: 232px;
 }

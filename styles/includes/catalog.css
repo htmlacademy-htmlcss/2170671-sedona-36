@@ -1,5 +1,5 @@
 .catalog {
-	padding: 50px 70px 40px 70px;
+	padding: 50px 70px 60px;
 }
 
 .catalog-header {
@@ -19,6 +19,7 @@
 }
 
 .catalog-select {
+	font-family: inherit;
 	font-size: 18px;
 	line-height: 21px;
 	color: #333333;
@@ -26,8 +27,10 @@
 	border-radius: 4px;
 	min-width: 292px;
 	margin-left: auto;
-	padding: 14px 20px;
+	padding: 12px 18px;
 	appearance: none;
+	appearance: none;
+	background-color: #ffffff;
 	background-image: url(../../images/select-check.svg);
 	background-repeat: no-repeat;
 	background-position: center right 20px;
@@ -108,6 +111,7 @@
 }
 
 .catalog-item {
+	max-width: 340px;
 	display: grid;
 	padding: 20px;
 	gap: 16px 20px;
@@ -118,9 +122,10 @@
 
 .catalog-item-title {
 	font-weight: 700;
-	font-style: 24px;
+	font-size: 24px;
 	line-height: 28px;
 	grid-column: 1 / -1;
+	margin: 0;
 }
 
 .catalog-item-image {
@@ -150,10 +155,14 @@
 
 .catalog-item-raiting-description {
 	margin: 0;
-	padding: 9px 22px 8px 23px;
+	display: grid;
+	place-items: center;
+	min-width: 140px;
+	min-height: 37px;
 	font-size: 16px;
 	line-height: 20px;
 	background-color: #f2f2f2;
+	text-transform: uppercase;
 }
 
 .catalog-item-stars {
@@ -170,10 +179,12 @@
 }
 
 .catalog-pagination-link {
+	text-transform: uppercase;
 	display: grid;
 	place-items: center;
 	min-width: 60px;
-	height: 60px;
+	min-height: 60px;
+	font-size: 20px;
 	line-height: 36px;
 }
 
