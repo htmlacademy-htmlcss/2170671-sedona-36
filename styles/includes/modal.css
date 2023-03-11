@@ -113,6 +113,16 @@
 	border: none;
 }
 
+.input-guests:hover {
+	background-color: #e6e6e6;
+	color: rgb(0 0 0 / 0.6);
+}
+
+.input-guests:disabled {
+	background-color: rgb(0 0 0 / 0.1);
+	color: rgb(0 0 0 / 0.2);
+}
+
 .adults-guests-container {
 	display: flex;
 	gap: 46px;
@@ -162,10 +172,16 @@
 
 .modal-input:hover {
 	background-color: #e6e6e6;
+	color: rgb(0 0 0 / 0.6);
 }
 
 .modal-input:focus-visible {
 	outline: 3px solid #83b3d3;
+}
+
+.modal-input:disabled {
+	background-color: rgb(0 0 0 / 0.1);
+	color: rgb(0 0 0 / 0.2);
 }
 
 .find-result {

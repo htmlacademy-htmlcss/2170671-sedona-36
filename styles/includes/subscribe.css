@@ -47,6 +47,7 @@
 
 .subscribe-input:disabled {
 	border: none;
+	background-color: rgb(255 255 255 / 0.6);
 }
 
 .subscribe-email-button {
