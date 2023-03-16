@@ -1,0 +1,4 @@
+{
+	"extends": "stylelint-config-firefoxic",
+	"ignoreFiles": ["styles/**/*.min.css"]
+}
